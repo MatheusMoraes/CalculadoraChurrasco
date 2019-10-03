@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.People"
+            BackgroundImage="Imagem.png"
+    >
+    <ContentPage.Content>
+
+        <AbsoluteLayout >
+            <Label Text="Informe a quantidade de pessoas para o churrasco:"
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds="0.45,0.07"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   FontSize="19"
+                   HorizontalTextAlignment="Center"
+                   />
+            <BoxView BackgroundColor="White" 
+                     Opacity="0.5"
+                     AbsoluteLayout.LayoutBounds="0.44,0.6,0.9,0.7"
+                     AbsoluteLayout.LayoutFlags="All"
+            />
+            
+            <BoxView BackgroundColor="White" 
+                     Opacity="0.35"
+                     AbsoluteLayout.LayoutBounds="0.8,0.05,0.95,0.1"
+                     AbsoluteLayout.LayoutFlags="All"
+            />
+            <Image Source="man.png" 
+                   AbsoluteLayout.LayoutBounds="0.05,0.2,0.2,0.2"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+           
+            <Label Text="0"
+                   AbsoluteLayout.LayoutBounds="0.29,0.295"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+           
+            <Slider x:Name="hSlider"
+                    Minimum="0"
+                    Maximum="50"
+                    AbsoluteLayout.LayoutBounds="0.65,0.3,0.5,0.02"
+                    AbsoluteLayout.LayoutFlags="All"
+                    ValueChanged="hSlider_ValueChanged"
+            />
+            
+            <Label Text="50"
+                   AbsoluteLayout.LayoutBounds="0.89,0.295"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+            
+            <Label x:Name="hTxtResult"
+                   FontSize="Medium"
+                   AbsoluteLayout.LayoutBounds="0.6,0.35"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
+            <Image Source="female.png"
+                   AbsoluteLayout.LayoutBounds="0.05,0.45,0.2,0.2"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+
+            <Label Text="0"
+                   AbsoluteLayout.LayoutBounds="0.29,0.5"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+
+            <Slider x:Name="mSlider"
+                    Minimum="0"
+                    Maximum="50"
+                    AbsoluteLayout.LayoutBounds="0.65,0.5,0.5,0.02"
+                    AbsoluteLayout.LayoutFlags="All"
+                    ValueChanged="mSlider_ValueChanged"                    
+            />
+            
+            <Label Text="50"
+                   AbsoluteLayout.LayoutBounds="0.89,0.5"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+            
+            <Label x:Name="mTxtResult"
+                   FontSize="Medium"
+                   AbsoluteLayout.LayoutBounds="0.6,0.55"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
+            
+            <Image Source="kid.png"
+                   AbsoluteLayout.LayoutBounds="0.05,0.7,0.21,0.21"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+            
+            <Label Text="0"
+                  AbsoluteLayout.LayoutBounds="0.29,0.7"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+            
+            <Slider x:Name="cSlider"
+                    Minimum="0"
+                    Maximum="50"
+                    AbsoluteLayout.LayoutBounds="0.65,0.7,0.5,0.02"
+                    AbsoluteLayout.LayoutFlags="All"
+                    ValueChanged="cSlider_ValueChanged"                    
+            />
+            
+            <Label Text="50"
+                   AbsoluteLayout.LayoutBounds="0.89,0.705"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="Black"
+                   FontSize="20"
+                   />
+            
+            <Label x:Name="cTxtResult"
+                   FontSize="Medium"
+                   AbsoluteLayout.LayoutBounds="0.6,0.75"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                />
+             
+            <Label Text="oooooooooooooooooooooooo"
+                   TextColor="Black"
+                   FontSize="Small"
+                   AbsoluteLayout.LayoutBounds="0.6,1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   />
+            <Button x:Name="nextPage1"
+                    Text="PRÓXIMO"
+                    TextColor="White"
+                    BackgroundColor="Orange"
+                    AbsoluteLayout.LayoutBounds="0.5,0.85"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                    BorderRadius="10"
+                    />
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>

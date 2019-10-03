@@ -88,20 +88,34 @@
   <ItemGroup>
     <Folder Include="Resources\drawable-hdpi\" />
     <Folder Include="Resources\drawable-xhdpi\" />
-    <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\boi.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\LogoOficial.jpeg" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\LogoOficial.jpeg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\galinha.png" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\porco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Imagem.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\female.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\kid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\man.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\fundoPessoa.jpg" />
   </ItemGroup>
   <Import Project="..\VemProChurras\VemProChurras.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
