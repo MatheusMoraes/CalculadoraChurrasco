@@ -6,6 +6,13 @@
     <ContentPage.Content>
 
         <AbsoluteLayout >
+            <Label Text="Informe o número de participantes"
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds="0.45,0.12"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   FontSize="20"                                      
+                   />
+            
             <Image Source="man.png" 
                    AbsoluteLayout.LayoutBounds="0.05,0.2,0.2,0.2"
                    AbsoluteLayout.LayoutFlags="All"
@@ -103,6 +110,12 @@
                    AbsoluteLayout.LayoutBounds="0.6,0.75"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                 />
+            <Label Text="oooooooooooooooooooooooo"
+                   TextColor="Black"
+                   FontSize="Small"
+                   AbsoluteLayout.LayoutBounds="0.6,1"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   />
 
         </AbsoluteLayout>
 
