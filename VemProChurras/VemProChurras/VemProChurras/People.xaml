@@ -2,19 +2,28 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.People"
-             BackgroundImage="fundoPessoa.jpg">
+            BackgroundImage="Imagem.png"
+    >
     <ContentPage.Content>
 
         <AbsoluteLayout >
             <Label Text="Informe a quantidade de pessoas para o churrasco:"
                    TextColor="Black"
-                   AbsoluteLayout.LayoutBounds="0.45,0.12"
+                   AbsoluteLayout.LayoutBounds="0.45,0.07"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                   FontSize="20"
+                   FontSize="19"
                    HorizontalTextAlignment="Center"
                    />
             <BoxView BackgroundColor="White" 
-                     Opacity="0.1"
+                     Opacity="0.5"
+                     AbsoluteLayout.LayoutBounds="0.44,0.6,0.9,0.7"
+                     AbsoluteLayout.LayoutFlags="All"
+            />
+            
+            <BoxView BackgroundColor="White" 
+                     Opacity="0.35"
+                     AbsoluteLayout.LayoutBounds="0.8,0.05,0.95,0.1"
+                     AbsoluteLayout.LayoutFlags="All"
             />
             <Image Source="man.png" 
                    AbsoluteLayout.LayoutBounds="0.05,0.2,0.2,0.2"
@@ -124,9 +133,9 @@
                     Text="PRÓXIMO"
                     TextColor="White"
                     BackgroundColor="Orange"
-                    AbsoluteLayout.LayoutBounds="0.6,0.82"
+                    AbsoluteLayout.LayoutBounds="0.5,0.85"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                    BorderRadius="3"
+                    BorderRadius="10"
                     />
 
         </AbsoluteLayout>
