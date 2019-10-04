@@ -2,31 +2,35 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.People"
-            BackgroundImage="Imagem.png"
-    >
+             BackgroundImage="fundoPessoa.jpg">
+    
     <ContentPage.Content>
 
         <AbsoluteLayout >
+            
+            <BoxView BackgroundColor="White" 
+                     Opacity="0.7"
+                     AbsoluteLayout.LayoutBounds="0.5,0.6,0.9,0.7"
+                     AbsoluteLayout.LayoutFlags="All"
+            />
+
+            <BoxView BackgroundColor="#f57b4a" 
+                     Opacity="0.85"
+                     AbsoluteLayout.LayoutBounds="0.5,0.05,0.95,0.1"
+                     AbsoluteLayout.LayoutFlags="All"
+            />
+
             <Label Text="Informe a quantidade de pessoas para o churrasco:"
-                   TextColor="Black"
+                   TextColor= "White"
+                   FontAttributes="Bold"
                    AbsoluteLayout.LayoutBounds="0.45,0.07"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    FontSize="19"
                    HorizontalTextAlignment="Center"
                    />
-            <BoxView BackgroundColor="White" 
-                     Opacity="0.5"
-                     AbsoluteLayout.LayoutBounds="0.44,0.6,0.9,0.7"
-                     AbsoluteLayout.LayoutFlags="All"
-            />
             
-            <BoxView BackgroundColor="White" 
-                     Opacity="0.35"
-                     AbsoluteLayout.LayoutBounds="0.8,0.05,0.95,0.1"
-                     AbsoluteLayout.LayoutFlags="All"
-            />
             <Image Source="man.png" 
-                   AbsoluteLayout.LayoutBounds="0.05,0.2,0.2,0.2"
+                   AbsoluteLayout.LayoutBounds="0.065,0.2,0.2,0.2"
                    AbsoluteLayout.LayoutFlags="All"
                    />
            
@@ -43,6 +47,8 @@
                     AbsoluteLayout.LayoutBounds="0.65,0.3,0.5,0.02"
                     AbsoluteLayout.LayoutFlags="All"
                     ValueChanged="hSlider_ValueChanged"
+                    MinimumTrackColor="#f57b4a"
+                    MaximumTrackColor="Black"
             />
             
             <Label Text="50"
@@ -58,7 +64,7 @@
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                 />
             <Image Source="female.png"
-                   AbsoluteLayout.LayoutBounds="0.05,0.45,0.2,0.2"
+                   AbsoluteLayout.LayoutBounds="0.08,0.45,0.2,0.2"
                    AbsoluteLayout.LayoutFlags="All"
                    />
 
@@ -74,7 +80,9 @@
                     Maximum="50"
                     AbsoluteLayout.LayoutBounds="0.65,0.5,0.5,0.02"
                     AbsoluteLayout.LayoutFlags="All"
-                    ValueChanged="mSlider_ValueChanged"                    
+                    ValueChanged="mSlider_ValueChanged" 
+                    MinimumTrackColor="#f57b4a"
+                    MaximumTrackColor="Black"
             />
             
             <Label Text="50"
@@ -91,7 +99,7 @@
                 />
             
             <Image Source="kid.png"
-                   AbsoluteLayout.LayoutBounds="0.05,0.7,0.21,0.21"
+                   AbsoluteLayout.LayoutBounds="0.09,0.7,0.21,0.21"
                    AbsoluteLayout.LayoutFlags="All"
                    />
             
@@ -107,7 +115,9 @@
                     Maximum="50"
                     AbsoluteLayout.LayoutBounds="0.65,0.7,0.5,0.02"
                     AbsoluteLayout.LayoutFlags="All"
-                    ValueChanged="cSlider_ValueChanged"                    
+                    ValueChanged="cSlider_ValueChanged"
+                    MinimumTrackColor="#f57b4a"
+                    MaximumTrackColor="Black"
             />
             
             <Label Text="50"
@@ -132,7 +142,7 @@
             <Button x:Name="nextPage1"
                     Text="PRÓXIMO"
                     TextColor="White"
-                    BackgroundColor="Orange"
+                    BackgroundColor="#f57b4a"
                     AbsoluteLayout.LayoutBounds="0.5,0.85"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                     BorderRadius="10"
