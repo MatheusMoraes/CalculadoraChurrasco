@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.PaginaBebidas">
+    <ContentPage.Content>
+
+
+        <AbsoluteLayout>
+            <Image Source="fundoBebida.png"
+                   Aspect="Fill"
+                   AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+
+            <BoxView Color="#f57b4a"
+                     AbsoluteLayout.LayoutBounds="0.5,0.1,0.8,0.06"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.85"/>
+
+            <Label TextColor="White"
+                   FontSize="18"
+                   Text="B E B I D A S"
+                   AbsoluteLayout.LayoutBounds="0.5,0.11"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   HorizontalTextAlignment="Center"/>
+
+            <StackLayout VerticalOptions="Center" 
+                         AbsoluteLayout.LayoutBounds="0.5,0.4,0.8,0.35"
+                         AbsoluteLayout.LayoutFlags="All"
+                         >
+
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+
+
+
+
+            </StackLayout>
+
+            <Label Style="{StaticResource texto}" Text="Cerveja"
+                       AbsoluteLayout.LayoutBounds="0.2,0.28"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Style="{StaticResource texto}" Text=" Caipirinha"
+                       AbsoluteLayout.LayoutBounds="0.2,0.36"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Style="{StaticResource texto}" Text=" Skol Beats"
+                       AbsoluteLayout.LayoutBounds="0.2,0.44"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Style="{StaticResource texto}" Text="   Sucos Naturais"
+                       AbsoluteLayout.LayoutBounds="0.2,0.52"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Style="{StaticResource texto}" Text="Vodka"
+                       AbsoluteLayout.LayoutBounds="0.197,0.60"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <Label Style="{StaticResource texto}" Text="   Refrigerante"
+                       AbsoluteLayout.LayoutBounds="0.2,0.68"
+                       AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.28"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.36"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.44"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.52"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.60"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Switch OnColor="#f57b4a" 
+                    AbsoluteLayout.LayoutBounds="0.85,0.68"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Button Text="P R O X I M O "
+                    BackgroundColor="#f57b4a"
+                    BorderRadius="15"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9,0.4,0.06"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Clicked="GoPaginaAcompanhamentos_Clicked"
+                  />
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
