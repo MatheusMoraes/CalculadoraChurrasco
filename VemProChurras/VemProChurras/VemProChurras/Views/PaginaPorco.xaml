@@ -3,10 +3,46 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.Views.PaginaPorco">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+
+            <StackLayout Orientation="Vertical" Spacing="10" Padding="30">
+
+                <Label Text="TOP 3 Melhores Cortes do Frango Para Churrasco"                   
+                   FontSize="18"
+                   TextColor="Black"                 
+                   HorizontalTextAlignment="Center"/>
+
+
+
+
+                <Label Text="#1 - A S A "
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="picanha.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+
+                <Label Text="A primeira na lista é a mais pedida de todos os churrascos. A picanha é apetitosa, suculenta e possui um sabor incomparável. Pode ser temperada só com sal grosso ou com outros condimentos, como pimenta do reino e alho em pasta. Para deixá-la realmente boa, é preciso selar antes de começar a assar." 
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                           HorizontalOptions="Start"/>
+
+                <Label Text="Para isso, deixe a carne próxima do fogo (cerca de 20 cm) por alguns minutos, girando até que cada lado perca o tom avermelhado. Depois disso é só subi-la novamente, deixando que asse até o ponto desejado. Essa selagem faz com que a carne fique muito mais suculenta e saborosa"                            
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
