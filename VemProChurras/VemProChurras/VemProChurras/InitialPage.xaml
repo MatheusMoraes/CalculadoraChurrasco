@@ -6,46 +6,29 @@
 
         <AbsoluteLayout>
 
-            <Label Text="CORTES"
-                   FontAttributes="Bold"
-                   FontSize="20"
-                   HorizontalTextAlignment="Center"
-                   TextColor="White"
-                   BackgroundColor="#f57b4a"
-                   AbsoluteLayout.LayoutBounds="0.5,0.04,1,0.05"
+            <Image Source="fundoInitial.jpg" 
+                   Aspect="Fill"
+                   AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
                    AbsoluteLayout.LayoutFlags="All"/>
 
-            <ImageButton Source="boi.png"
-                            WidthRequest="150"
-                             BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.8,0.1"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Clicked="ImageButton_Clicked"/>
+            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.6,0.75,0.08"
+                        AbsoluteLayout.LayoutFlags="All">
 
-            <ImageButton Source="galinha.png"
-                         WidthRequest="150"
-                         BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.75,0.4"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Clicked="Pagina_Galinha"/>
+               
 
+                <Button BackgroundColor="#f57b4a"
+                        Text="V A M O S  C O M E Ç A R"
+                        TextColor="White"
+                        BorderRadius="18"
+                        Clicked="Pagina_People"/>
 
+            </StackLayout>
 
-            <ImageButton Source="porco.png"
-                         WidthRequest="150"
-                         BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.78,0.6"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Clicked="Pagina_Porco"/>
-
-
-            <Button Text="Teste"
-                    Clicked="Button_Clicked"
-                    AbsoluteLayout.LayoutBounds="0.5,0.99"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
 
 
         </AbsoluteLayout>
+
+         
     </ContentPage.Content>
 </ContentPage>
