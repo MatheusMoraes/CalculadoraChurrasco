@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.Menu" Title="Menu">
+    <MasterDetailPage.Master >
+
+
+        <ContentPage Title="Menu" Padding="0">
+
+            <ContentPage.Content>
+
+                <StackLayout >
+
+                    <Grid BackgroundColor="#f57b4a">
+
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="10"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="10"/>
+
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="80"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="10"/>
+
+                        </Grid.RowDefinitions>
+
+                        <Label
+                          Grid.Column="1"
+                          Grid.Row="2"
+                          Text="Menu"
+                          TextColor="White" FontSize="Large"/>
+
+                    </Grid>
+
+                    <TableView Intent="Menu">
+                        <TableSection>
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="Inicio" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="Cortes" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="Vamos Calcular" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="Pessoas" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="♥ Tipos de Carne" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="♥ Acompanhantes" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="♥ Bebidas" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="Resultado" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
+                                    <Label Text="♥ FeedBack" VerticalTextAlignment="Center"/>
+                                </StackLayout>
+                            </ViewCell>
+
+                        </TableSection>
+                    </TableView>
+
+                </StackLayout>
+
+            </ContentPage.Content>
+
+        </ContentPage>
+
+    </MasterDetailPage.Master>
+    
+    
+    <MasterDetailPage.Detail>
+
+        <ContentPage/>
+
+    </MasterDetailPage.Detail>
+</MasterDetailPage>
