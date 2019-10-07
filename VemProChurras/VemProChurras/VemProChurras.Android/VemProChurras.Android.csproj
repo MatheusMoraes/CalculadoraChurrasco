@@ -115,7 +115,7 @@
     <AndroidResource Include="Resources\drawable\man.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\fundoPessoa.jpg" />
+    <EmbeddedResource Include="Resources\drawable-xxhdpi\fundoPessoa.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable-xxhdpi\fundoBebida.jpg" />
@@ -136,7 +136,7 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\fundoResultado.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable-xxhdpi\fundoAcomp.jpg" />
+    <EmbeddedResource Include="Resources\drawable-xxhdpi\fundoAcomp.jpg" />
   </ItemGroup>
   <Import Project="..\VemProChurras\VemProChurras.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
