@@ -29,5 +29,11 @@ namespace VemProChurras
             cTxtResult.Text = "Crianças:" + Convert.ToInt16(cSlider.Value);
         }
 
+        private async void PaginaCarnes(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PaginaDeCarnes());
+
+        }
+
     }
 }

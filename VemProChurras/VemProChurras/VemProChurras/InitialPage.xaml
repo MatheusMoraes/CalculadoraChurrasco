@@ -6,24 +6,35 @@
 
         <AbsoluteLayout>
 
-            <Image Source="fundoInitial.jpg" 
+            <Image Source="fundoInitial.jpeg" 
                    Aspect="Fill"
                    AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
                    AbsoluteLayout.LayoutFlags="All"/>
 
-            <StackLayout AbsoluteLayout.LayoutBounds="0.5,0.6,0.75,0.08"
-                        AbsoluteLayout.LayoutFlags="All">
+            <BoxView Color="White"
+                     
+                     AbsoluteLayout.LayoutBounds="0.5,0.2,0.6,0.4"
+                     AbsoluteLayout.LayoutFlags="All"/>
 
-               
+
+            <Button BackgroundColor="#f57b4a"
+                        Text="C O R T E S"
+                        TextColor="White"
+                        BorderRadius="18"
+                        Clicked="Pagina_Cortes"
+                        AbsoluteLayout.LayoutBounds="0.5,0.6,0.75,0.08"
+                        AbsoluteLayout.LayoutFlags="All"/>
+
 
                 <Button BackgroundColor="#f57b4a"
                         Text="V A M O S  C O M E Ç A R"
                         TextColor="White"
                         BorderRadius="18"
-                        Clicked="Pagina_People"/>
+                        Clicked="Pagina_People"
+                        AbsoluteLayout.LayoutBounds="0.5,0.7,0.75,0.08"
+                        AbsoluteLayout.LayoutFlags="All"/>
 
-            </StackLayout>
-
+           
 
 
 
