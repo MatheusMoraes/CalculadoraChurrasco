@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.Carnes"
+             BackgroundImage="fundoCarne.jpg">
+    <ContentPage.Content >
+        
+        <AbsoluteLayout>
+
+            <BoxView BackgroundColor="#f57b4a" 
+                     AbsoluteLayout.LayoutBounds="0.45,0.13,0.9,0.05" 
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label Text="Carnes " FontSize="Large" TextColor="White"
+                   AbsoluteLayout.LayoutBounds="0.5,0.13" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+
+            <BoxView BackgroundColor="#f57b4a"
+                     AbsoluteLayout.LayoutBounds="0.45,0.3,0.9,0.05" 
+                     AbsoluteLayout.LayoutFlags="All"/>
+                        
+            <Switch x:Name="BovinaEnable" IsToggled="True"
+                        AbsoluteLayout.LayoutBounds="0.9,0.3" 
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        OnColor="White" />
+            
+            <Label Text="Carne Bovina" FontSize="Large" TextColor="White"
+                   AbsoluteLayout.LayoutBounds="0.16,0.3" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <BoxView BackgroundColor="#f57b4a" 
+                     AbsoluteLayout.LayoutBounds="0.45,0.45,0.9,0.05" 
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Switch x:Name="SuinaEnable" IsToggled="True"
+                        AbsoluteLayout.LayoutBounds="0.9,0.45" 
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        OnColor="White" />
+
+            <Label Text="Carne Suina" FontSize="Large" TextColor="White"
+                   AbsoluteLayout.LayoutBounds="0.16,0.45" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+            
+            <BoxView BackgroundColor="#f57b4a" 
+                     AbsoluteLayout.LayoutBounds="0.45,0.6,0.9,0.05" 
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Switch x:Name="AvesEnable" IsToggled="True"
+                        AbsoluteLayout.LayoutBounds="0.9,0.6" 
+                        AbsoluteLayout.LayoutFlags="PositionProportional"
+                        OnColor="White" />
+
+            <Label Text="Carne de Aves" FontSize="Large" TextColor="White"
+                   AbsoluteLayout.LayoutBounds="0.16,0.6" 
+                   AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
+            <Button Text="PRÓXIMO" 
+                    TextColor="White"
+                    BackgroundColor="#f57b4a"
+                    AbsoluteLayout.LayoutBounds="0.5,0.9" 
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    BorderRadius="3"
+                    Clicked="PaginaBebidas"/>
+
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
