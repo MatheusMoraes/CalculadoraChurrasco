@@ -17,7 +17,7 @@ namespace VemProChurras
 			InitializeComponent ();
 		}
 
-        private async void ImageButton_Clicked(object sender, EventArgs e)
+        private async void Pagina_Boi(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PaginaBoi());
         }

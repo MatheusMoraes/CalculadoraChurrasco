@@ -1,50 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VemProChurras.InitialPage">
+             x:Class="VemProChurras.InitialPage"
+             BackgroundImage="fundoCortes.jpg">
     <ContentPage.Content>
 
         <AbsoluteLayout>
 
-            <Label Text="CORTES"
+            <BoxView Color="White"
+                     Opacity="0.9"
+                     AbsoluteLayout.LayoutBounds="0.5,0.7,0.8,0.65"
+                     AbsoluteLayout.LayoutFlags="All"
+                     />
+            
+            <BoxView Color="#f57b4a"
+                     AbsoluteLayout.LayoutBounds="0.5,0.13,0.8,0.1"
+                     AbsoluteLayout.LayoutFlags="All"
+                     />
+            
+            <Label Text="Clique nas fotos abaixo e veja algumas dicas de cortes para o churrasco"
+                   TextColor="White"
+                   FontSize="16"
+                   HorizontalTextAlignment="Center"
+                   AbsoluteLayout.LayoutBounds="0.5,0.135,0.8,0.1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+
+            <Label Text="S U I N A"
+                   TextColor="#f57b4a"
+                    AbsoluteLayout.LayoutBounds="0.2,0.36"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                    FontSize="19"
+                    
+                   />
+            
+            <Label Text="B O V I N A"
+                   TextColor="#f57b4a"
+                   AbsoluteLayout.LayoutBounds="0.2,0.57"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   FontSize="19"
+                   />
+            
+            <Label Text="A V E S"
+                   TextColor="#f57b4a"
+                   AbsoluteLayout.LayoutBounds="0.2,0.81"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   FontSize="19" 
+                   />
+
+            <Label Text="C O R T E S"
                    FontAttributes="Bold"
                    FontSize="20"
                    HorizontalTextAlignment="Center"
                    TextColor="White"
                    BackgroundColor="#f57b4a"
-                   AbsoluteLayout.LayoutBounds="0.5,0.04,1,0.05"
+                   AbsoluteLayout.LayoutBounds="0.5,0.04,0.9,0.05"
                    AbsoluteLayout.LayoutFlags="All"/>
-
-            <ImageButton Source="boi.png"
-                            WidthRequest="150"
-                             BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.8,0.1"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Clicked="ImageButton_Clicked"/>
-
-            <ImageButton Source="galinha.png"
-                         WidthRequest="150"
-                         BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.75,0.4"
-                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                         Clicked="Pagina_Galinha"/>
-
-
 
             <ImageButton Source="porco.png"
                          WidthRequest="150"
                          BackgroundColor="Transparent"
-                         AbsoluteLayout.LayoutBounds="0.78,0.6"
+                         AbsoluteLayout.LayoutBounds="0.8,0.35"
                          AbsoluteLayout.LayoutFlags="PositionProportional"
                          Clicked="Pagina_Porco"/>
 
+            <ImageButton Source="boi.png"
+                         WidthRequest="150"
+                         BackgroundColor="Transparent"
+                         AbsoluteLayout.LayoutBounds="0.79,0.57"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Clicked="Pagina_Boi"/>
 
-            <Button Text="Teste"
-                    Clicked="Button_Clicked"
-                    AbsoluteLayout.LayoutBounds="0.5,0.99"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
-
-
+            <ImageButton Source="galinha.png"
+                         WidthRequest="150"
+                         BackgroundColor="Transparent"
+                         AbsoluteLayout.LayoutBounds="0.78,0.85"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         Clicked="Pagina_Galinha"/>
 
         </AbsoluteLayout>
     </ContentPage.Content>
