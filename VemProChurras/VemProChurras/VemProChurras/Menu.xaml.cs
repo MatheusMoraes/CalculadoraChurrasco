@@ -16,7 +16,7 @@ namespace VemProChurras
         {
             InitializeComponent();
             
-            Detail = new NavigationPage(new Menu()) { BarBackgroundColor = Color.FromRgb(245,123,74)};
+            Detail = new NavigationPage(new InitialPage()) { BarBackgroundColor = Color.FromRgb(245,123,74)};
 
             NavigationPage.SetHasNavigationBar(this,false);
         }

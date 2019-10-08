@@ -11,7 +11,7 @@ namespace VemProChurras
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PaginaBoi()) { BarBackgroundColor = Color.FromRgb(245, 123, 74) };
+            MainPage = new NavigationPage(new Menu()) { BarBackgroundColor = Color.FromRgb(245, 123, 74) };
         }
 
         protected override void OnStart()
