@@ -3,10 +3,88 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.Views.PaginaGalinha">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Galinha Pó"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <ScrollView>
+        <StackLayout Orientation="Vertical" Spacing="10" Padding="30">
+
+            <Label Text="TOP 3 Melhores Cortes do Frango Para Churrasco"                   
+                   FontSize="18"
+                   TextColor="Black"                 
+                   HorizontalTextAlignment="Center"/>
+
+            <Label Text="#1 - A S A "
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+            <Image Source="asa.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+            <Label Text="Asinhas de frango são sempre bem-vindas nos churrascos. Elas fazem sucesso principalmente entre as crianças, por conta de seu sabor delicado e crocância. Por isso, considere temperos mais leves e até agridoces para essa carne." 
+                   Style="{StaticResource corte}"/>
+
+            <Label Text="Sua grande vantagem é a de absorver bem qualquer tipo de tempero. As asinhas podem ser assada no forno, na grelha e até mesmo no espeto. "
+                         Style="{StaticResource corte}"/>
+
+
+            <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+            <Label Text="#2 -  C O X A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+            <Image Source="coxa.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+            <Label Text="Assim como as asinhas, as coxas de frango são sempre encontradas nos churrascos tradicionais. é um corte com carne macia e com grande valor proteico." 
+                   Style="{StaticResource corte}"/>
+
+            <Label Text="Além de ter uma grande facilidade de absorver temperos, a coxa de frango é rapido e o seu preparo pode ser realizado com complementos simples como sal, vinagre, cebola e salsa ou até mesmo um vinho branco. Use e abuse de dua criatividade"
+                         Style="{StaticResource corte}"/>
+
+
+            <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+            <Label Text="#3 - E S P E T I N H O "
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+            <Image Source="espeto.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+            <Label Text="Com o passar do tempo, os espetinhos de frango vem se tornando cada vez mais frequentes nos pratos dos churrasqueiros de plantão. Geralmente são feitos com a carne do peito do frango, um corte macio, saboroso e de fácil preparo." 
+                   Style="{StaticResource corte}"/>
+
+            <Label Text="Por ser um espeto, a sua criatividade em relação aos temperos é o principal diferencial. Há uma gama muito grande de opções de temperos tais como: vinagre, o vinho, o azeite, o alecrim, o alho, sal, pimenta entre outros. Vale ressaltar que o uso de cebola ou pimentão nos espetos costuma dar muito certo, portanto, seja receptivo em relação as possibilidades."
+                         Style="{StaticResource corte}"/>
+
+
+            <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+
+
+
+
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
