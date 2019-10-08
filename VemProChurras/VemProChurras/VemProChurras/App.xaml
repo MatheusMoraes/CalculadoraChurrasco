@@ -3,6 +3,21 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.App">
     <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="BoxView" x:Key="caixa">
+                <Setter Property="BackgroundColor" Value="#f1f3f4"/>
+                <Setter Property="Opacity" Value="0.85"/>
 
+            </Style>
+
+            <Style TargetType="Label" x:Key="texto">
+                <Setter Property="FontSize" Value="16"/>
+                <Setter Property="TextColor" Value="#f57b4a"/>
+                <Setter Property="FontAttributes" Value="Bold"/>
+
+            </Style>
+            
+            
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

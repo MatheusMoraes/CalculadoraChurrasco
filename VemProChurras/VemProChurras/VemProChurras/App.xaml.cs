@@ -11,7 +11,7 @@ namespace VemProChurras
         {
             InitializeComponent();
 
-            MainPage = new People();
+            MainPage = new NavigationPage(new PaginaBebida());
                 
                 //new NavigationPage(new InitialPage()) { BarBackgroundColor = Color.FromRgb(245, 123, 74) };
         }
