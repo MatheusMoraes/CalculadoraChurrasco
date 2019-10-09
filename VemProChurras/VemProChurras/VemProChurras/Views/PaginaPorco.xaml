@@ -7,7 +7,7 @@
 
             <StackLayout Orientation="Vertical" Spacing="10" Padding="30">
 
-                <Label Text="TOP 3 Melhores Cortes do Frango Para Churrasco"                   
+                <Label Text="TOP 4 Melhores Cortes Suinos Para Churrasco"                   
                    FontSize="18"
                    TextColor="Black"                 
                    HorizontalTextAlignment="Center"/>
@@ -15,24 +15,23 @@
 
 
 
-                <Label Text="#1 - A S A "
+                <Label Text="#1 - L I N G U I Ç A "
                            FontSize="18"
                            TextColor="Black"
                            HorizontalTextAlignment="Center"/>
 
 
-                <Image Source="picanha.png"
+                <Image Source="linguica.jpg"
                            WidthRequest="250"
                            HeightRequest="250"/>
 
 
 
-                <Label Text="A primeira na lista é a mais pedida de todos os churrascos. A picanha é apetitosa, suculenta e possui um sabor incomparável. Pode ser temperada só com sal grosso ou com outros condimentos, como pimenta do reino e alho em pasta. Para deixá-la realmente boa, é preciso selar antes de começar a assar." 
-                             FontSize="15"
+                <Label Text="A primeira da lista ja era de certa forma óbvia. Hoje é quase impossível que não haja linguiça em um churrasco. Além disso, a linguiça é um corte comum nos pratos dos brasileiros."
                            HorizontalTextAlignment="Start"
                            HorizontalOptions="Start"/>
 
-                <Label Text="Para isso, deixe a carne próxima do fogo (cerca de 20 cm) por alguns minutos, girando até que cada lado perca o tom avermelhado. Depois disso é só subi-la novamente, deixando que asse até o ponto desejado. Essa selagem faz com que a carne fique muito mais suculenta e saborosa"                            
+                <Label Text="Para sua preparação, não tem segredo. Opte por temperos simples como o sal grosso, alho, cebola e limão. Caso não haja prática ou não disponibilize de tempo para temperar a carne, há mercados que disponibilizam temperos prontos para tal preparo. "                       
                              FontSize="15"
                            HorizontalTextAlignment="Start"
                             HorizontalOptions="Start"/>
@@ -40,6 +39,89 @@
                 <Label Text="╰─────────────╮❀╭─────────────╯"
                        TextColor="#f57b4a"
                        HorizontalTextAlignment="Center"/>
+
+
+
+                <Label Text="#1 - P E R N I L "
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="pernil.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+
+                <Label Text=""
+                           HorizontalTextAlignment="Start"
+                           HorizontalOptions="Start"/>
+
+                <Label Text=""                       
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+                <Label Text="P I C A N H A   S U I N A "
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="picanhaSuina.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+
+                <Label Text=" "
+                           HorizontalTextAlignment="Start"
+                           HorizontalOptions="Start"/>
+
+                <Label Text=""                       
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+                <Label Text="L O M B I N H O"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="lombinho.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+
+                <Label Text="É uma carne com sabor bem característico e deve ser preparada com extrema atenção. O ideal é temperar a carne cerca de 3 (três) horas antes do churrasco para que os temperos sejam absorvidos pela carne."
+                           HorizontalTextAlignment="Start"
+                           HorizontalOptions="Start"/>
+
+                <Label Text="O ideal é que seja feita com o fogo não tão alto, pois ela pode dourar por fora e ficar crua por dentro. O ideal é prepará-la na brasa."                       
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
 
             </StackLayout>
 
