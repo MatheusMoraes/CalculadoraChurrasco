@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VemProChurras.Carnes"
-             BackgroundImage="fundoCarne.jpg">
+             x:Class="VemProChurras.PaginaDeCarnes"
+             BackgroundImage="fundoCarnes.png">
     <ContentPage.Content >
-        
+
         <AbsoluteLayout>
 
             <BoxView BackgroundColor="#f57b4a" 
@@ -19,12 +19,12 @@
             <BoxView BackgroundColor="#f57b4a"
                      AbsoluteLayout.LayoutBounds="0.45,0.3,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
-                        
+
             <Switch x:Name="BovinaEnable" IsToggled="True"
                         AbsoluteLayout.LayoutBounds="0.9,0.3" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
-            
+
             <Label Text="Carne Bovina" FontSize="Large" TextColor="White"
                    AbsoluteLayout.LayoutBounds="0.16,0.3" 
                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
@@ -41,7 +41,7 @@
             <Label Text="Carne Suina" FontSize="Large" TextColor="White"
                    AbsoluteLayout.LayoutBounds="0.16,0.45" 
                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
-            
+
             <BoxView BackgroundColor="#f57b4a" 
                      AbsoluteLayout.LayoutBounds="0.45,0.6,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
@@ -61,7 +61,7 @@
                     AbsoluteLayout.LayoutBounds="0.5,0.9" 
                     AbsoluteLayout.LayoutFlags="PositionProportional"
                     BorderRadius="3"
-                    Clicked="PaginaBebidas"/>
+                    Clicked="PaginaBebida"/>
 
 
         </AbsoluteLayout>

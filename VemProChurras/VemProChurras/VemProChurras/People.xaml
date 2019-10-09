@@ -146,6 +146,7 @@
                     AbsoluteLayout.LayoutBounds="0.5,0.85"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                     BorderRadius="10"
+                    Clicked="PaginaCarnes"
                     />
 
         </AbsoluteLayout>

@@ -3,16 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using VemProChurras.Views;
+
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace VemProChurras
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Carnes : ContentPage
+	public partial class PaginaDeCarnes : ContentPage
 	{
-		public Carnes ()
+		public PaginaDeCarnes ()
 		{
 			InitializeComponent ();
 		}
@@ -20,6 +20,9 @@ namespace VemProChurras
 
         private async void PaginaBebida(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ());
+            await Navigation.PushAsync(new PaginaBebidas());
+
+
         }
-    }
+	}
+}

@@ -18,6 +18,10 @@ namespace VemProChurras
            
 		}
 
+        private async void Pagina_Cortes(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PaginaCortes());
+        }
      
         private async void Pagina_People(object sender, EventArgs e)
         {
