@@ -20,7 +20,7 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.3,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="BovinaEnable" 
+            <Switch x:Name="BovinaEnable" IsToggled="True"
                         AbsoluteLayout.LayoutBounds="0.9,0.3" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
