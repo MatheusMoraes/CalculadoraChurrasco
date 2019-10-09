@@ -10,11 +10,14 @@ using Xamarin.Forms.Xaml;
 namespace VemProChurras
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Menu : ContentPage
+	public partial class Menu : MasterDetailPage
 	{
 		public Menu ()
 		{
 			InitializeComponent ();
+
+            Detail = new NavigationPage(new InitialPage()) { BarBackgroundColor = Color.FromRgb(243, 123, 74) };
+
 		}
 	}
 }
