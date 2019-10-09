@@ -15,29 +15,17 @@ namespace VemProChurras
 		public InitialPage ()
 		{
 			InitializeComponent ();
+           
 		}
 
-        private async void ImageButton_Clicked(object sender, EventArgs e)
+        private async void Pagina_Cortes(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginaBoi());
+            await Navigation.PushAsync(new PaginaCortes());
         }
-
-
-        private async void Pagina_Galinha(object sender, EventArgs e)
+     
+        private async void Pagina_People(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginaGalinha());
-
-        }
-
-
-        private async void Button_Clicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
-        }
-
-        private async void Pagina_Porco(object sender,EventArgs e)
-        {
-            await Navigation.PushAsync(new PaginaPorco());
+            await Navigation.PushAsync(new People());
         }
     }
 }

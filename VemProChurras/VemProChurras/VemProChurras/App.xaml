@@ -16,8 +16,15 @@
                 <Setter Property="FontAttributes" Value="Bold"/>
 
             </Style>
-            
-            
+
+            <Style TargetType="Label" x:Key="corte">
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
+                <Setter Property="FontSize" Value="15"/>
+
+
+            </Style>
+
+
         </ResourceDictionary>
     </Application.Resources>
 </Application>

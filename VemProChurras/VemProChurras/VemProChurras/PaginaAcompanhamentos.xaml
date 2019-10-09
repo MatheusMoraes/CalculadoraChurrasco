@@ -4,6 +4,13 @@
              x:Class="VemProChurras.PaginaAcompanhamentos">
     <ContentPage.Content>
         <AbsoluteLayout>
+
+            <Image Source="fundoAcomp.png"
+                   Aspect="Fill"
+                   AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
+                   AbsoluteLayout.LayoutFlags="All"
+                   />
+
             <BoxView Color="#f57b4a"
                      AbsoluteLayout.LayoutBounds="0.5,0.05,0.8,0.06"
                      AbsoluteLayout.LayoutFlags="All"
@@ -16,19 +23,19 @@
                        AbsoluteLayout.LayoutFlags="PositionProportional"
                        HorizontalTextAlignment="Center"/>
 
-                <StackLayout VerticalOptions="Center" 
+            <StackLayout VerticalOptions="Center" 
                              AbsoluteLayout.LayoutBounds="0.5,0.3,0.75,0.35"
                              AbsoluteLayout.LayoutFlags="All"
                              Spacing="10">
 
-                                <BoxView Style="{StaticResource caixa}"/>
-                                <BoxView Style="{StaticResource caixa}"/>
-                                <BoxView Style="{StaticResource caixa}"/>
-                                <BoxView Style="{StaticResource caixa}"/>
-                                <BoxView Style="{StaticResource caixa}"/>
-                                <BoxView Style="{StaticResource caixa}"/>   
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
+                <BoxView Style="{StaticResource caixa}"/>
 
-                </StackLayout>
+            </StackLayout>
 
 
 

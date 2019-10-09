@@ -1,7 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-
+using VemProChurras.Views;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace VemProChurras
 {
@@ -11,9 +11,7 @@ namespace VemProChurras
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new PaginaBebida());
-                
-                //new NavigationPage(new InitialPage()) { BarBackgroundColor = Color.FromRgb(245, 123, 74) };
+            MainPage = new NavigationPage(new InitialPage()) { BarBackgroundColor = Color.FromRgb(245, 123, 74) };
         }
 
         protected override void OnStart()

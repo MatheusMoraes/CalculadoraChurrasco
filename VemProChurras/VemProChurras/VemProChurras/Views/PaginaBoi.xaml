@@ -3,10 +3,236 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="VemProChurras.Views.PaginaBoi">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="BOIII!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+      
+        <ScrollView>
+
+            <StackLayout Orientation="Vertical" Spacing="10" Padding="30">
+
+                <Label Text="TOP 09 Melhores Carnes Bovinas Para Churrasco"                   
+                   FontSize="18"
+                   TextColor="Black"                 
+                   HorizontalTextAlignment="Center"/>
+
+
+               
+
+                    <Label Text="#1 - P I C A N H A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                    <Image Source="picanha.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+
+                    <Label Text="A primeira na lista é a mais pedida de todos os churrascos. A picanha é apetitosa, suculenta e possui um sabor incomparável. Pode ser temperada só com sal grosso ou com outros condimentos, como pimenta do reino e alho em pasta. Para deixá-la realmente boa, é preciso selar antes de começar a assar." 
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                           HorizontalOptions="Start"/>
+
+                    <Label Text="Para isso, deixe a carne próxima do fogo (cerca de 20 cm) por alguns minutos, girando até que cada lado perca o tom avermelhado. Depois disso é só subi-la novamente, deixando que asse até o ponto desejado. Essa selagem faz com que a carne fique muito mais suculenta e saborosa"                            
+                             FontSize="15"
+                           HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+                
+                <Label Text="#2 - C O S T E L A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="costela.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label  Text="A costela, seja de porco ou de boi, é uma carne que sempre é destaque nos churrascos. Por possuir fibras grossas e compridas, seu tempo de cozimento é mais longo, aceitando desde temperos mais elaborados até o sal grosso puro e simples."
+                          FontSize="15"
+                        HorizontalTextAlignment="Start"
+                            HorizontalOptions="Start"/>
+
+                <Label  Text="Uma boa opção é também temperá-la com molho barbecue, ou rechear cortes transversais com rodelas de cebola, prendendo-a em garfos próprios para churrasco."
+                          FontSize="15"  
+                        HorizontalTextAlignment="Start"
+                             HorizontalOptions="Start"/>
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+                <Label Text="#3 - F R A L D I N H A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="fraldinha.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+                <Label Text="Uma das boas opções de carnes para churrasco, a fraldinha é uma carne de corte pequeno e fibras longas. Possui pouca concentração de gordura, sendo conhecida como uma opção leve e macia. A galera fitness agradece!"
+                        HorizontalTextAlignment="Start"
+                        HorizontalOptions="Start"/>
+
+                <Label Text="É possível prepará-la na brasa, economizando um bom trabalho no manuseio da churrasqueira. Para isso, tempere bem a carne usando manteiga, limão, alho, sal e suco de laranja e enrole-a em papel alumínio. Essa é uma ótima opção para servir na hora do almoço e com pratos de acompanhamento."
+                    HorizontalOptions="Start"
+                       HorizontalTextAlignment="Start"/>
+
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+                <Label Text="#4 - M A M I N H A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+
+                <Image Source="maminha.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label Text="A maminha é considerada uma carne magra. Se a sua alimentação prioriza a ingestão baixa de gorduras, ela pode ser uma ótima opção. No entanto, para ela ficar macia, saborosa e suculenta no churrasco, recomendamos não retirar a capinha de gordura antes de assá-la. Para servir a maminha, você deve cortá-la em fatias sempre contra as fibras da carne."
+                       FontSize="15"
+                       HorizontalTextAlignment="Start"
+                        HorizontalOptions="Start"/>
+
+
+                <Label Text="Você pode escolher entre prepará-la no espeto, fatiando em porções finas, ou na grelha. Mas, é necessário ter cuidado para não deixar passar demais do ponto, a fim de não alterar o sabor." 
+                       Style="{StaticResource corte}"/>
+
+
+                <Label Text="#5 - A L C A T R A"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                <Image Source="alcatra.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="A alcatra, quando comprada inteira, pode ser dividida em três partes: a picanha, a maminha e o miolo da alcatra. O miolo, como o próprio nome indica, fica bem no centro dessa carne."/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="Essa parte, em especial, é uma das ótimas opções de carnes para churrasco. Pois, além de macia, tem bem menos gordura que a picanha, ou seja, é saudável e igualmente saborosa. Este corte pode ser preparado na grelha, mas pede atenção especial para que não perca o ponto, pois leva só de 15 a 20 minutos para ficar pronto."/>
+
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+                
+                
+                <Label Text="#6 - F I L É  M I G N O N"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                <Image Source="fileMignon.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="O Filé Mignon é conhecido por ser um pedaço nobre e raramente utilizado no dia a dia, por conta do preço mais elevado. Porém, como carne para churrasco, é uma boa pedida para quem gosta de ousar."/>
+
+
+                <Label Style="{StaticResource corte}"
+                       Text="Apesar de não ser comumente usado para esse fim, o filé mignon é macio e adocicado. Ele pode também ser servido em espetinhos acompanhando outras carnes, como linguiça e bacon."/>
+
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+                <Label Text="#7 - C O N T R A   F I L É"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                <Image Source="contraFile.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="O contra-filé também pode ser encontrado com o nome de lombo desossado ou filé curto. Geralmente, ele é servido mal passado. Para os apreciadores da carne sangrando, essa é a pedida ideal, já que fica macio e com o sabor acentuado."/>
+
+
+                <Label Style="{StaticResource corte}"
+                       Text="O contra-filé pode ser servido fatiado ou picado. Aliás, ele fica ótimo com cebola roxa assada, já que pega bem o sabor desse legume."/>
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+
+
+                <Label Text="#8 - C U P I M"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                <Image Source="cupim.jpg"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+
+                <Label Style="{StaticResource corte}"
+                       Text="O cupim é a carne encontrada na parte de trás do boi, logo atrás do pescoço. É uma carne consistente e fibrosa, que tem um sabor muito característico. O cupim costuma ser servido junto de pratos e entradas como risotos e saladas."/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="A carne, apesar de ser bastante popular para churrascos, precisa de algum tempo para ser assada até o ponto ideal para consumo. Uma boa dica é enrolar a carne em papel celofane (próprio para churrasco), pois ajuda a distribuir o calor da churrasqueira de maneira uniforme, garantindo que todo o interior seja bem cozido."/>
+
+
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+                
+
+                <Label Text="#9 - T  B O N E"
+                           FontSize="18"
+                           TextColor="Black"
+                           HorizontalTextAlignment="Center"/>
+
+                <Image Source="tbone.png"
+                           WidthRequest="250"
+                           HeightRequest="250"/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="Esta peça é retirada do boi por meio de um corte transversal ao osso. Aliás, este corte que faz com que o osso fique em formato de T, que dá o nome à carne."/>
+
+                <Label Style="{StaticResource corte}"
+                       Text="O T-bone ganhou maior destaque recentemente por ser considerado gourmet. Isso porque, o osso tem de uma lado contra-filé e do outro filé mignon, ou seja, num mesmo corte, você tem duas texturas e dois sabores diferentes."/>
+
+
+                <Label Text="╰─────────────╮❀╭─────────────╯"
+                       TextColor="#f57b4a"
+                       HorizontalTextAlignment="Center"/>
+
+            </StackLayout>
+
+
+
+           
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
