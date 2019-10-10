@@ -19,6 +19,7 @@ namespace VemProChurras
         private void hSlider_ValueChanged (object sender, ValueChangedEventArgs e)
         {
             hTxtResult.Text = "Homens:" + Convert.ToInt16(hSlider.Value);
+
         }
         private void mSlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
@@ -27,19 +28,20 @@ namespace VemProChurras
         private void cSlider_ValueChanged(object sender, ValueChangedEventArgs e)
         {
             cTxtResult.Text = "Crianças:" + Convert.ToInt16(cSlider.Value);
+
         }
 
         private async void PaginaCarnes(object sender, EventArgs e)
         {
+            var variaveis = new Variaveis {
 
-
-
-
-
-
-
-            await Navigation.PushAsync(new PaginaDeCarnes());
-
+                NumHomem = Convert.ToInt16(hSlider.Value),
+                NumMulher = Convert.ToInt16(mSlider.Value),
+                NumCrianca = Convert.ToInt16(cSlider.Value),
+        };
+            var pagCarnes = new PaginaDeCarnes();
+            pagCarnes.BindingContext = variaveis;
+            await Navigation.PushAsync(pagCarnes);
         }
 
     }

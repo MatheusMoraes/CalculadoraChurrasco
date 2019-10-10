@@ -46,6 +46,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)People.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Variaveis.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\PaginaBoi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
