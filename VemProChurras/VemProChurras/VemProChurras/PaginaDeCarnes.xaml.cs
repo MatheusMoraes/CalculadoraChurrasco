@@ -23,7 +23,6 @@ namespace VemProChurras
         {
             var variaveis = new Variaveis
             {
-
                 CarneAves = SwitchAves.IsToggled.Equals(30)
             };
             var pagBebidas = new PaginaBebidas();
