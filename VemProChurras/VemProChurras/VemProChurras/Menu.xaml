@@ -89,9 +89,10 @@
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell >
+                            <ViewCell>
                                 <StackLayout Padding="15,10">
-                                    <Label Text="♥ FeedBack" VerticalTextAlignment="Center"/>
+                                    <Label Text="♥ FeedBack" VerticalTextAlignment="Center"
+                                           />
                                 </StackLayout>
                             </ViewCell>
 

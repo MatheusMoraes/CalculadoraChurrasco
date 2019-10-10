@@ -15,14 +15,21 @@ namespace VemProChurras
 		public PaginaDeCarnes ()
 		{
 			InitializeComponent ();
+            
 		}
 
 
         private async void PaginaBebida(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginaBebidas());
-
-
+            var variaveis = new Variaveis
+            {
+                CarneAves = SwitchAves.IsToggled.Equals(30)
+            };
+            var pagBebidas = new PaginaBebidas();
+            pagBebidas.BindingContext = variaveis;
+            await Navigation.PushAsync(pagBebidas);
         }
+
+
 	}
 }

@@ -10,20 +10,19 @@ using Xamarin.Forms.Xaml;
 namespace VemProChurras
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PaginaDescartaveis : ContentPage
+	public partial class PaginaResultado : ContentPage
 	{
-		public PaginaDescartaveis ()
+		public PaginaResultado ()
 		{
 			InitializeComponent ();
 		}
 
-
-        private async void Pagina_Resultado(object sender, EventArgs e)
+        private async void Inicio(object sender, EventArgs e)
         {
-
-            await Navigation.PushAsync(new PaginaResultado());
+            await Navigation.PopToRootAsync();
 
 
         }
-	}
+
+    }
 }
