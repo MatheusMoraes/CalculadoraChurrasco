@@ -15,14 +15,15 @@ namespace VemProChurras
 		public PaginaDeCarnes ()
 		{
 			InitializeComponent ();
+            
 		}
 
 
         private async void PaginaBebida(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new PaginaBebidas());
-
-
         }
+
+
 	}
 }

@@ -11,16 +11,16 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.13,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Label Text="Carnes " FontSize="Large" TextColor="White"
+            <Label Text="CARNES" FontSize="Large" TextColor="White"
                    AbsoluteLayout.LayoutBounds="0.5,0.13" 
                    AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-
+            
             <BoxView BackgroundColor="#f57b4a"
                      AbsoluteLayout.LayoutBounds="0.45,0.3,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="BovinaEnable" 
+            <Switch x:Name="SwitchBovina" IsToggled="True" 
                         AbsoluteLayout.LayoutBounds="0.9,0.3" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
@@ -33,7 +33,7 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.45,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="SuinaEnable" IsToggled="True"
+            <Switch x:Name="SwitchSuino" IsToggled="False"
                         AbsoluteLayout.LayoutBounds="0.9,0.45" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
@@ -46,7 +46,7 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.6,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="AvesEnable" IsToggled="True"
+            <Switch x:Name="SwitchAves" IsToggled="False"
                         AbsoluteLayout.LayoutBounds="0.9,0.6" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
