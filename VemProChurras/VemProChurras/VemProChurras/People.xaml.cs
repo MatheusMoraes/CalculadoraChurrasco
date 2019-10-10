@@ -31,6 +31,13 @@ namespace VemProChurras
 
         private async void PaginaCarnes(object sender, EventArgs e)
         {
+
+
+
+
+
+
+
             await Navigation.PushAsync(new PaginaDeCarnes());
 
         }

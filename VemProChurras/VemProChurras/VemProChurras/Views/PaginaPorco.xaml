@@ -7,7 +7,7 @@
 
             <StackLayout Orientation="Vertical" Spacing="10" Padding="30">
 
-                <Label Text="TOP 4 Melhores Cortes Suinos Para Churrasco"                   
+                <Label Text="TOP 4 Melhores Cortes Suinos Para Churrasco:"                   
                    FontSize="18"
                    TextColor="Black"                 
                    HorizontalTextAlignment="Center"/>
@@ -54,11 +54,11 @@
 
 
 
-                <Label Text=""
+                <Label Text="O pernil é uma carne suculenta e utilizada em diversas ocasiões, porém cada vez mais vem ganhando mais espaço nos pratos dos churrasqueiros de plantão."
                            HorizontalTextAlignment="Start"
                            HorizontalOptions="Start"/>
 
-                <Label Text=""                       
+                <Label Text="O ideal é temperá-la com sal grosso, alho, cebola, salsa, cebolinha, pimenta e (se preferir) vinho branco ou tinto. Coloque as fatias na grelha. Cuidado com o ponto da carne. o ideal é virar as fatias frequentemente até que fiquem douradas. Sirva-as com limão e veja a alegria de seus convidados."                       
                              FontSize="15"
                            HorizontalTextAlignment="Start"
                             HorizontalOptions="Start"/>
@@ -80,13 +80,13 @@
 
 
 
-                <Label Text=" "
+                <Label Text="Que tal um almoço de verdade com uma picanha suína na churrasqueira? A peça é temperada com uma base de açúcar mascavo, sal, cebola, alho, páprica, chilli e orégano. Ou seja: o sabor promete ser muuuuito marcante!."
                            HorizontalTextAlignment="Start"
                            HorizontalOptions="Start"/>
 
-                <Label Text=""                       
-                             FontSize="15"
-                           HorizontalTextAlignment="Start"
+                <Label Text="Uma dica é levar ao fogo para selar e, depois, retirar a peça para cortá-la em tiras. Em seguida, é só jogar um limão por cima e voltar ao fogo por alguns minutos (até chegar ao ponto desejado)."                       
+                            FontSize="15"
+                            HorizontalTextAlignment="Start"
                             HorizontalOptions="Start"/>
 
                 <Label Text="╰─────────────╮❀╭─────────────╯"
