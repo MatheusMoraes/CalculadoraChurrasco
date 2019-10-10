@@ -4,8 +4,8 @@
              x:Class="VemProChurras.PaginaBebidas">
     <ContentPage.Content>
 
-
         <AbsoluteLayout>
+            
             <Image Source="fundoBebida.png"
                    Aspect="Fill"
                    AbsoluteLayout.LayoutBounds="0.5,0.5,1,1"
@@ -104,6 +104,7 @@
                     AbsoluteLayout.LayoutFlags="All"
                     Clicked="GoPaginaAcompanhamentos_Clicked"
                   />
+
 
         </AbsoluteLayout>
     </ContentPage.Content>
