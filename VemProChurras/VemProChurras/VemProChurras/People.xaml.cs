@@ -33,15 +33,17 @@ namespace VemProChurras
 
         private async void PaginaCarnes(object sender, EventArgs e)
         {
-            var variaveis = new Variaveis {
+            
+            var variaveis = new Variaveis
+            {
 
                 NumHomem = Convert.ToInt16(hSlider.Value),
                 NumMulher = Convert.ToInt16(mSlider.Value),
                 NumCrianca = Convert.ToInt16(cSlider.Value),
         };
-            var pagCarnes = new PaginaDeCarnes();
-            pagCarnes.BindingContext = variaveis;
-            await Navigation.PushAsync(pagCarnes);
+            var PagResultado = new PaginaResultado();
+            PagResultado.BindingContext = variaveis;
+            await Navigation.PushAsync(PagResultado);
         }
 
     }
