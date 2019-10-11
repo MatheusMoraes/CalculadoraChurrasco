@@ -110,7 +110,7 @@
                     AbsoluteLayout.LayoutFlags="All"
                     Clicked="GoPaginaAcompanhamentos_Clicked"
                   />
-
+            <StackLayout>
             <Label Text="{Binding NumHomem}"
                    x:Name="lblHomem"
                    IsVisible="False"/>
@@ -124,16 +124,17 @@
                    IsVisible="False"/>
 
             <Label Text="{Binding ValorCarneAves}"
-                   x:Name="lblHomem"
+                   x:Name="lblAves"
                   />
 
             <Label Text="{Binding ValorCarneBovina}"
-                   x:Name="lblMulher"
+                   x:Name="lblBovina"
                    />
 
             <Label Text="{Binding ValorCarneSuina}"
-                   x:Name="lblCrianca"
+                   x:Name="lblSuino"
                    />
+            </StackLayout>
 
 
         </AbsoluteLayout>
