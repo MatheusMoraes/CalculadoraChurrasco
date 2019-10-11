@@ -25,9 +25,9 @@ namespace VemProChurras
             {
                 CarneAves = SwitchAves.IsToggled.Equals(30)
             };
-            var pagBebidas = new PaginaBebidas();
-            pagBebidas.BindingContext = variaveis;
-            await Navigation.PushAsync(pagBebidas);
+            var PagResultado = new PaginaResultado();
+            PagResultado.BindingContext = variaveis;
+            await Navigation.PushAsync(PagResultado);
         }
 
 

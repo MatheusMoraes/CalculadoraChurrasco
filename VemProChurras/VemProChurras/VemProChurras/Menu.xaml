@@ -4,7 +4,6 @@
              x:Class="VemProChurras.Menu" Title="Menu">
     <MasterDetailPage.Master >
 
-
         <ContentPage Title="Menu" Padding="0">
 
             <ContentPage.Content>
