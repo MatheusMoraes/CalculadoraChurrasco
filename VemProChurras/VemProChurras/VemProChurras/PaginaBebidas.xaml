@@ -72,27 +72,33 @@
 
 
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchCerveja"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.28"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchCaipirinha"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.36"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchBeats" 
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.44"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchSuco"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.52"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchVodka"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.60"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchRefrigerante"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.68"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
@@ -104,6 +110,33 @@
                     AbsoluteLayout.LayoutFlags="All"
                     Clicked="GoPaginaAcompanhamentos_Clicked"
                   />
+            
+                <Label Text="{Binding NumHomem}"
+                       x:Name="lblHomem"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding NumMulher}"
+                       x:Name="lblMulher"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding NumCrianca}"
+                       x:Name="lblCrianca"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding ValorCarneAves}"
+                       x:Name="lblAves"
+                       IsVisible="False"
+                />
+
+                <Label Text="{Binding ValorCarneBovina}"
+                   x:Name="lblBovina"
+                   IsVisible="False"
+                />
+            
+                <Label Text="{Binding ValorCarneSuina}"
+                   x:Name="lblSuina"
+                   IsVisible="False"
+                />
 
 
         </AbsoluteLayout>

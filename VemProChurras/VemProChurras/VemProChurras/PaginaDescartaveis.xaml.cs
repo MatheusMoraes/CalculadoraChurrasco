@@ -21,7 +21,9 @@ namespace VemProChurras
         private async void Pagina_Resultado(object sender, EventArgs e)
         {
 
-            await Navigation.PushAsync(new PaginaResultado());
+            var variaveis = new Variaveis();
+
+            await Navigation.PushAsync(new PaginaResultado(variaveis));
 
 
         }

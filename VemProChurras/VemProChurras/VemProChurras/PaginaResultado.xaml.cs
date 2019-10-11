@@ -12,16 +12,18 @@ namespace VemProChurras
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaginaResultado : ContentPage
 	{
-		public PaginaResultado ()
+        public Variaveis variaveisresultado;
+
+        public PaginaResultado (Variaveis variaveis)
 		{
 			InitializeComponent ();
-		}
+        }
+
+        
 
         private async void Inicio(object sender, EventArgs e)
         {
             await Navigation.PopToRootAsync();
-
-
         }
 
     }
