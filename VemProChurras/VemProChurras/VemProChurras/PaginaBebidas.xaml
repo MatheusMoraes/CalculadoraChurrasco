@@ -110,31 +110,33 @@
                     AbsoluteLayout.LayoutFlags="All"
                     Clicked="GoPaginaAcompanhamentos_Clicked"
                   />
-            <StackLayout>
-            <Label Text="{Binding NumHomem}"
-                   x:Name="lblHomem"
-                   IsVisible="False"/>
+            
+                <Label Text="{Binding NumHomem}"
+                       x:Name="lblHomem"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding NumMulher}"
+                       x:Name="lblMulher"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding NumCrianca}"
+                       x:Name="lblCrianca"
+                       IsVisible="False"
+                />
+                <Label Text="{Binding ValorCarneAves}"
+                       x:Name="lblAves"
+                       IsVisible="False"
+                />
 
-            <Label Text="{Binding NumMulher}"
-                   x:Name="lblMulher"
-                   IsVisible="False"/>
-
-            <Label Text="{Binding NumCrianca}"
-                   x:Name="lblCrianca"
-                   IsVisible="False"/>
-
-            <Label Text="{Binding ValorCarneAves}"
-                   x:Name="lblAves"
-                  />
-
-            <Label Text="{Binding ValorCarneBovina}"
+                <Label Text="{Binding ValorCarneBovina}"
                    x:Name="lblBovina"
-                   />
-
-            <Label Text="{Binding ValorCarneSuina}"
-                   x:Name="lblSuino"
-                   />
-            </StackLayout>
+                   IsVisible="False"
+                />
+            
+                <Label Text="{Binding ValorCarneSuina}"
+                   x:Name="lblSuina"
+                   IsVisible="False"
+                />
 
 
         </AbsoluteLayout>

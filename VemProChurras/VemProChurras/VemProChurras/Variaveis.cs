@@ -12,7 +12,12 @@ namespace VemProChurras
         public int ValorCarneAves { get; set; }
         public int ValorCarneBovina { get; set; }
         public int ValorCarneSuina { get; set; }
-
+        public int ValorCerveja { get;  set; }
+        public int ValorCaipirinha { get;  set; }
+        public int ValorBeats { get; set; }
+        public int ValorSuco { get; set; }
+        public int ValorVodka { get; set; }
+        public int ValorRefrigerante { get; set; }
 
     }
 
