@@ -28,6 +28,12 @@ namespace VemProChurras
         public int ValorVinagrete { get; set; }
         public int ValorSaladaMaio { get; set; }
         public int ValorPao { get; set; }
+        //descartaveis
+        public int ValorCopos { get; set; }
+        public int ValorPratos { get; set; }
+        public int ValorTalheres { get; set; }
+        public int ValorCanudos { get; set; }
+        public int ValorGuardanapos { get; set; }
 
     }
 

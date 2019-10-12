@@ -48,7 +48,7 @@
                        AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
 
-            <Label Style="{StaticResource texto}" Text=" Talheres"
+            <Label Style="{StaticResource texto}" Text="Talheres"
                        AbsoluteLayout.LayoutBounds="0.2,0.39"
                        AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
@@ -64,28 +64,30 @@
 
             
             
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchCopos"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.22"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchPratos"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.3"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchTalheres"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.39"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchCanudos"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.475"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
 
-            <Switch OnColor="#f57b4a" 
+            <Switch x:Name="SwitchGuardanapos"
+                    OnColor="#f57b4a" 
                     AbsoluteLayout.LayoutBounds="0.85,0.56"
                     AbsoluteLayout.LayoutFlags="PositionProportional"/>
-
-          
-
 
             <Button Text="P R O X I M O "
                     BackgroundColor="#f57b4a"
@@ -95,6 +97,92 @@
                     AbsoluteLayout.LayoutFlags="All"
                    Clicked="Pagina_Resultado"
                   />
+
+            <Label Text="{Binding NumHomem}"
+                       x:Name="lblHomem"
+                       IsVisible="False"
+                />
+            <Label Text="{Binding NumMulher}"
+                       x:Name="lblMulher"
+                       IsVisible="False"
+                />
+            <Label Text="{Binding NumCrianca}"
+                       x:Name="lblCrianca"
+                       IsVisible="False"
+                />
+            <Label Text="{Binding ValorCarneAves}"
+                       x:Name="lblAves"
+                       IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorCarneBovina}"
+                   x:Name="lblBovina"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorCarneSuina}"
+                   x:Name="lblSuina"
+                   IsVisible="False"
+                />
+            <Label Text="{Binding ValorCerveja}"
+                       x:Name="lblCerveja"
+                       IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorCaipirinha}"
+                   x:Name="lblCaipirinha"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorBeats}"
+                   x:Name="lblBeats"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorSuco}"
+                       x:Name="lblSuco"
+                       IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorVodka}"
+                   x:Name="lblVodka"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorRefrigerante}"
+                   x:Name="lblRefrigerante"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorArrozAGrega}"
+                       x:Name="lblArrozAGrega"
+                       IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorQueijoCoalho}"
+                   x:Name="lblQueijoCoalho"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorFarofa}"
+                   x:Name="lblFarofa"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorVinagrete}"
+                       x:Name="lblVinagrete"
+                       IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorSaladaMaio}"
+                   x:Name="lblSaladaMaio"
+                   IsVisible="False"
+                />
+
+            <Label Text="{Binding ValorPao}"
+                   x:Name="lblPao"
+                   IsVisible="False"
+                />
 
 
         </AbsoluteLayout>
