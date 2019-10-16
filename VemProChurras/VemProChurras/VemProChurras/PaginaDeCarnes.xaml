@@ -24,10 +24,17 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.3,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="SwitchBovina" IsToggled="True" 
+            <Switch x:Name="SwitchBovina" 
                         AbsoluteLayout.LayoutBounds="0.9,0.3" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
-                        OnColor="White" />
+                        OnColor="White" 
+                        IsToggled="False"
+                        Toggled="Switch_teste"/>
+
+            <Label x:Name="testeBovino"
+                    AbsoluteLayout.LayoutBounds="0.9,0.5" 
+                        AbsoluteLayout.LayoutFlags="PositionProportional"/>
+
 
             <Label Text="Carne Bovina" FontSize="Large" TextColor="White"
                    AbsoluteLayout.LayoutBounds="0.16,0.3" 

@@ -21,8 +21,7 @@ namespace VemProChurras.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
             SetStatusBarColor(Android.Graphics.Color.Rgb(245, 123, 74));
-            
-            
+           
         }
     }
 }
