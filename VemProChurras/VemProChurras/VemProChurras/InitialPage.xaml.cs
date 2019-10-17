@@ -29,9 +29,6 @@ namespace VemProChurras
         }
 
 
-        private async void Pagina_Opções (object sender,EventArgs e)
-        {
-            await Navigation.PushAsync(new PaginaResultado());
-        }
+     
     }
 }
