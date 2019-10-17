@@ -26,21 +26,21 @@ namespace VemProChurras
 
         private async void GoPaginaAcompanhamentos_Clicked(object sender, EventArgs e)
         {
-            if (SwitchCerveja.IsToggled == true) ValorCerveja1 = 30;
+            if (SwitchCerveja.IsToggled == true) ValorCerveja1 = 05;
             else ValorCerveja1 = 0;
 
-            if (SwitchCaipirinha.IsToggled == true) ValorCaipirinha1 = 30;
+            if (SwitchCaipirinha.IsToggled == true) ValorCaipirinha1 = 05;
             else ValorCaipirinha1 = 0;
 
-            if (SwitchBeats.IsToggled == true) ValorBeats1 = 30;
+            if (SwitchBeats.IsToggled == true) ValorBeats1 = 05;
             else ValorBeats1 = 0;
-            if (SwitchSuco.IsToggled == true) ValorSuco1 = 30;
+            if (SwitchSuco.IsToggled == true) ValorSuco1 = 05;
             else ValorSuco1 = 0;
 
-            if (SwitchVodka.IsToggled == true) ValorVodka1 = 30;
+            if (SwitchVodka.IsToggled == true) ValorVodka1 = 10;
             else ValorVodka1 = 0;
 
-            if (SwitchRefrigerante.IsToggled == true) ValorRefrigerante1 = 30;
+            if (SwitchRefrigerante.IsToggled == true) ValorRefrigerante1 = 5;
             else ValorRefrigerante1 = 0;
 
             Variaveis variaveis = new Variaveis

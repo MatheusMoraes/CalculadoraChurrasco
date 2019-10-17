@@ -40,6 +40,8 @@ namespace VemProChurras
         public double TotCarneHomem { get; set; }
         public double TotCarneMulher { get; set; }
         public double TotCarneCrianca { get; set; }
+        public double TotalDeAdultos { get; set; }
+        public double TotalDePessoas { get; set; }
         public double Total { get; set; }
 
     }

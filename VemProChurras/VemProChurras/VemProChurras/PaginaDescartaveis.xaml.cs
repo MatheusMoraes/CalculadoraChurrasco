@@ -26,19 +26,19 @@ namespace VemProChurras
 
         private async void Pagina_Resultado(object sender, EventArgs e)
         {
-            if (SwitchCopos.IsToggled == true) ValorCopos1 = 30;
+            if (SwitchCopos.IsToggled == true) ValorCopos1 = 20;
             else ValorCopos1 = 0;
 
-            if (SwitchPratos.IsToggled == true) ValorPratos1 = 30;
+            if (SwitchPratos.IsToggled == true) ValorPratos1 = 20;
             else ValorPratos1 = 0;
 
-            if (SwitchTalheres.IsToggled == true) ValorTalheres1 = 30;
+            if (SwitchTalheres.IsToggled == true) ValorTalheres1 = 20;
             else ValorTalheres1 = 0;
 
-            if (SwitchCanudos.IsToggled == true) ValorCanudos1 = 30;
+            if (SwitchCanudos.IsToggled == true) ValorCanudos1 = 20;
             else ValorCanudos1 = 0;
 
-            if (SwitchGuardanapos.IsToggled == true) ValorGuardanapos1 = 30;
+            if (SwitchGuardanapos.IsToggled == true) ValorGuardanapos1 = 20;
             else ValorGuardanapos1 = 0;
 
             Variaveis variaveis = new Variaveis
