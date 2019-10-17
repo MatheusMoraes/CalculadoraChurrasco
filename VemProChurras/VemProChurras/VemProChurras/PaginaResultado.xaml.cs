@@ -39,5 +39,11 @@ namespace VemProChurras
             await Navigation.PopToRootAsync();
         }
 
+        private async void PaginaRateio(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PaginaRateio());
+
+        }
+
     }
 }
