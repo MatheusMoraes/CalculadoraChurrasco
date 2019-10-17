@@ -22,15 +22,24 @@
                      AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
                      AbsoluteLayout.LayoutFlags="All"
                      Opacity="0.8"/>
-
+            
+            <Label Text="Participantes"
+                   AbsoluteLayout.LayoutBounds="0.2,0.4"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="#f57b4a"/>
 
             <Label Text="{Binding TotalDePessoas}"
-                   AbsoluteLayout.LayoutBounds="0.3,0.4"
+                   AbsoluteLayout.LayoutBounds="0.4,0.4"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="#f57b4a"/>
+            
+            <Label Text="Valor Total"
+                   AbsoluteLayout.LayoutBounds="0.2,0.45"
                     AbsoluteLayout.LayoutFlags="PositionProportional"
                    TextColor="#f57b4a"/>
 
             <Label Text="{Binding Total} "
-                   AbsoluteLayout.LayoutBounds="0.3,0.45"
+                   AbsoluteLayout.LayoutBounds="0.4,0.45"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    TextColor="#f57b4a"/>
 
