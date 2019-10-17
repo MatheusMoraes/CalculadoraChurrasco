@@ -16,7 +16,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Churrasco_Controller.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)InitialPage.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -44,12 +43,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)PaginaDescartaveis.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)PaginaResultado.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)People.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Resultado.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Variaveis.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Views\PaginaBoi.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -121,7 +121,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Resultado.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)PaginaResultado.xaml">
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>

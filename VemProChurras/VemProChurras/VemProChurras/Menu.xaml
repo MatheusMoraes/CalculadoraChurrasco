@@ -4,7 +4,6 @@
              x:Class="VemProChurras.Menu" Title="Menu">
     <MasterDetailPage.Master >
 
-
         <ContentPage Title="Menu" Padding="0">
 
             <ContentPage.Content>
@@ -88,9 +87,10 @@
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell >
+                            <ViewCell>
                                 <StackLayout Padding="15,10">
-                                    <Label Text="♥ FeedBack" VerticalTextAlignment="Center"/>
+                                    <Label Text="♥ FeedBack" VerticalTextAlignment="Center"
+                                           />
                                 </StackLayout>
                             </ViewCell>
 

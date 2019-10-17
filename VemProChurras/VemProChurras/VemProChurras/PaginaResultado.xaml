@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.PaginaResultado"
+             BackgroundImage="fundoResultados.png">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <BoxView Color="#f57b4a"
+                     AbsoluteLayout.LayoutBounds="0.5,0.02,0.8,0.06"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.85"/>
+
+            <Label TextColor="White"
+                   FontSize="18"
+                   Text="R E S U L T A D O S"
+                   AbsoluteLayout.LayoutBounds="0.5,0.028"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   HorizontalTextAlignment="Center"/>
+
+
+            <BoxView Color="White"
+                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.8"/>
+
+            <Label Text="{Binding NumHomem}"
+                   AbsoluteLayout.LayoutBounds="0.5,0.6,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label Text="{Binding NumMulher}"
+                   AbsoluteLayout.LayoutBounds="0.5,0.7,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label Text="{Binding NumCrianca}"
+                   AbsoluteLayout.LayoutBounds="0.5,0.8,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+            <Label Text="{Binding ValorCarneBovina}"
+                   AbsoluteLayout.LayoutBounds="0.5,0.8,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"/>
+
+
+
+            <Button Text="F I N A L I Z A R "
+                    BackgroundColor="#f57b4a"
+                    BorderRadius="15"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.5,0.95,0.8,0.06"
+                    AbsoluteLayout.LayoutFlags="All"
+                    Clicked="Inicio"
+                  />
+
+
+
+        </AbsoluteLayout>
+       
+    </ContentPage.Content>
+</ContentPage>
