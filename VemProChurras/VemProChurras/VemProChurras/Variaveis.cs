@@ -7,33 +7,40 @@ namespace VemProChurras
     public class Variaveis
     {
         //pessoas
-        public int NumHomem  { get; set; }
-        public int NumMulher  { get; set; }
-        public int NumCrianca { get; set; }
+        public double NumHomem  { get; set; }
+        public double NumMulher  { get; set; }
+        public double NumCrianca { get; set; }
         //carnes
-        public int ValorCarneAves { get; set; }
-        public int ValorCarneBovina { get; set; }
-        public int ValorCarneSuina { get; set; }
+        public double ValorCarneAves { get; set; }
+        public double ValorCarneBovina { get; set; }
+        public double ValorCarneSuina { get; set; }
         //bebidas
-        public int ValorCerveja { get;  set; }
-        public int ValorCaipirinha { get;  set; }
-        public int ValorBeats { get; set; }
-        public int ValorSuco { get; set; }
-        public int ValorVodka { get; set; }
-        public int ValorRefrigerante { get; set; }
+        public double ValorCerveja { get;  set; }
+        public double ValorCaipirinha { get;  set; }
+        public double ValorBeats { get; set; }
+        public double ValorSuco { get; set; }
+        public double ValorVodka { get; set; }
+        public double ValorRefrigerante { get; set; }
         //acompanhamentos
-        public int ValorArrozAGrega { get; set; }
-        public int ValorQueijoCoalho { get; set; }
-        public int ValorFarofa { get; set; }
-        public int ValorVinagrete { get; set; }
-        public int ValorSaladaMaio { get; set; }
-        public int ValorPao { get; set; }
+        public double ValorArrozAGrega { get; set; }
+        public double ValorQueijoCoalho { get; set; }
+        public double ValorFarofa { get; set; }
+        public double ValorVinagrete { get; set; }
+        public double ValorSaladaMaio { get; set; }
+        public double ValorPao { get; set; }
         //descartaveis
-        public int ValorCopos { get; set; }
-        public int ValorPratos { get; set; }
-        public int ValorTalheres { get; set; }
-        public int ValorCanudos { get; set; }
-        public int ValorGuardanapos { get; set; }
+        public double ValorCopos { get; set; }
+        public double ValorPratos { get; set; }
+        public double ValorTalheres { get; set; }
+        public double ValorCanudos { get; set; }
+        public double ValorGuardanapos { get; set; }
+
+
+        //Calculos
+        public double TotCarneHomem { get; set; }
+        public double TotCarneMulher { get; set; }
+        public double TotCarneCrianca { get; set; }
+        public double Total { get; set; }
 
     }
 

@@ -18,11 +18,11 @@ namespace VemProChurras
 		}
 
 
-        public int ValorCopos1 { get; private set; }
-        public int ValorPratos1 { get; private set; }
-        public int ValorTalheres1 { get; private set; }
-        public int ValorCanudos1 { get; private set; }
-        public int ValorGuardanapos1 { get; private set; }
+        public double ValorCopos1 { get; private set; }
+        public double ValorPratos1 { get; private set; }
+        public double ValorTalheres1 { get; private set; }
+        public double ValorCanudos1 { get; private set; }
+        public double ValorGuardanapos1 { get; private set; }
 
         private async void Pagina_Resultado(object sender, EventArgs e)
         {
@@ -43,24 +43,24 @@ namespace VemProChurras
 
             Variaveis variaveis = new Variaveis
             {
-                NumHomem = Convert.ToInt32(lblHomem.Text),
-                NumMulher = Convert.ToInt32(lblMulher.Text),
-                NumCrianca = Convert.ToInt32(lblCrianca.Text),
-                ValorCarneAves = Convert.ToInt32(lblAves.Text),
-                ValorCarneBovina = Convert.ToInt32(lblBovina.Text),
-                ValorCarneSuina = Convert.ToInt32(lblSuina.Text),
-                ValorCerveja = Convert.ToInt32(lblCerveja.Text),
-                ValorCaipirinha = Convert.ToInt32(lblCaipirinha.Text),
-                ValorBeats = Convert.ToInt32(lblBeats.Text),
-                ValorSuco = Convert.ToInt32(lblSuco.Text),
-                ValorVodka = Convert.ToInt32(lblVodka.Text),
-                ValorRefrigerante = Convert.ToInt32(lblRefrigerante.Text),
-                ValorArrozAGrega = Convert.ToInt32(lblArrozAGrega.Text),
-                ValorQueijoCoalho = Convert.ToInt32(lblQueijoCoalho.Text),
-                ValorFarofa = Convert.ToInt32(lblFarofa.Text),
-                ValorVinagrete = Convert.ToInt32(lblVinagrete.Text),
-                ValorSaladaMaio = Convert.ToInt32(lblSaladaMaio.Text),
-                ValorPao = Convert.ToInt32(lblPao.Text),
+                NumHomem = Convert.ToDouble(lblHomem.Text),
+                NumMulher = Convert.ToDouble(lblMulher.Text),
+                NumCrianca = Convert.ToDouble(lblCrianca.Text),
+                ValorCarneAves = Convert.ToDouble(lblAves.Text),
+                ValorCarneBovina = Convert.ToDouble(lblBovina.Text),
+                ValorCarneSuina = Convert.ToDouble(lblSuina.Text),
+                ValorCerveja = Convert.ToDouble(lblCerveja.Text),
+                ValorCaipirinha = Convert.ToDouble(lblCaipirinha.Text),
+                ValorBeats = Convert.ToDouble(lblBeats.Text),
+                ValorSuco = Convert.ToDouble(lblSuco.Text),
+                ValorVodka = Convert.ToDouble(lblVodka.Text),
+                ValorRefrigerante = Convert.ToDouble(lblRefrigerante.Text),
+                ValorArrozAGrega = Convert.ToDouble(lblArrozAGrega.Text),
+                ValorQueijoCoalho = Convert.ToDouble(lblQueijoCoalho.Text),
+                ValorFarofa = Convert.ToDouble(lblFarofa.Text),
+                ValorVinagrete = Convert.ToDouble(lblVinagrete.Text),
+                ValorSaladaMaio = Convert.ToDouble(lblSaladaMaio.Text),
+                ValorPao = Convert.ToDouble(lblPao.Text),
                 ValorCopos = ValorCopos1,
                 ValorPratos = ValorPratos1,
                 ValorTalheres = ValorTalheres1,

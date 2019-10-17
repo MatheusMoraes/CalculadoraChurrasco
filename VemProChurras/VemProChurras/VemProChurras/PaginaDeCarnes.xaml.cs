@@ -27,10 +27,10 @@ namespace VemProChurras
             if (SwitchBovina.IsToggled == true) ValorCarneBovina1 = 30;
             else ValorCarneBovina1 = 0;
 
-            if (SwitchAves.IsToggled == true) ValorCarneAves1 = 30;
+            if (SwitchAves.IsToggled == true) ValorCarneAves1 = 25;
             else ValorCarneAves1 = 0;
 
-            if (SwitchSuino.IsToggled == true) ValorCarneSuino1 = 30;
+            if (SwitchSuino.IsToggled == true) ValorCarneSuino1 = 27;
             else ValorCarneSuino1 = 0;
 
             Variaveis variaveis = new Variaveis
