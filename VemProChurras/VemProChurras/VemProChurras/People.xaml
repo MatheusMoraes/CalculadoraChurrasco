@@ -120,7 +120,13 @@
                     MaximumTrackColor="Black"
             />
 
-         
+            <!--<Entry x:Name="Eteste"
+                    AbsoluteLayout.LayoutBounds="0.65,0.5"
+                    AbsoluteLayout.LayoutFlags="PositionProportional"
+                   Placeholder="asjkdhaskjdsahdkjashksj"
+                   PlaceholderColor="Green"
+                   />-->
+
             <Label Text="50"
                    AbsoluteLayout.LayoutBounds="0.89,0.705"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
