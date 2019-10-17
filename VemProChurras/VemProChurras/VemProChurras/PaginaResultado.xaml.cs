@@ -12,16 +12,26 @@ namespace VemProChurras
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaginaResultado : ContentPage
 	{
+
+        public Variaveis variaveisCal;
+
         public PaginaResultado (Variaveis variaveis)
 		{
 			InitializeComponent ();
-            variaveis.TotCarneHomem = variaveis.NumHomem * 0.5 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves*0.3) + (variaveis.ValorCarneSuina*0.2));
-            variaveis.TotCarneMulher = variaveis.NumMulher * 0.35 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves * 0.3) + (variaveis.ValorCarneSuina * 0.2));
-            variaveis.TotCarneCrianca = variaveis.NumCrianca * 0.15 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves * 0.3) + (variaveis.ValorCarneSuina * 0.2));
-            variaveis.Total = variaveis.TotCarneCrianca + variaveis.TotCarneHomem + variaveis.TotCarneMulher;
+            variaveisCal = variaveis;
+            Calculo();
+
         }
 
-       
+        public void Calculo()
+        {
+            variaveisCal.TotCarneHomem = variaveisCal.NumHomem * 0.5 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
+            variaveisCal.TotCarneMulher = variaveisCal.NumMulher * 0.35 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
+            variaveisCal.TotCarneCrianca = variaveisCal.NumCrianca * 0.15 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
+            variaveisCal.Total = variaveisCal.TotCarneCrianca + variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher;
+            
+        }
+
 
         private async void Inicio(object sender, EventArgs e)
         {
