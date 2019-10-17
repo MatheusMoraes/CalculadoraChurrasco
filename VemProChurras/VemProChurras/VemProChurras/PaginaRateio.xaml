@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VemProChurras.PaginaRateio">
-    BackgroundImage="a.jpg">
+             x:Class="VemProChurras.PaginaRateio"
+             BackgroundImage="a.jpg">
     <ContentPage.Content>
 
         <AbsoluteLayout>
@@ -20,7 +20,7 @@
 
 
             <BoxView Color="White"
-                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
+                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.9,0.55"
                      AbsoluteLayout.LayoutFlags="All"
                      Opacity="0.8"/>
 
@@ -30,6 +30,17 @@
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                    />
 
+           
+
+
+            <Button Text="C A L C U L A R "
+                    BackgroundColor="#f57b4a"
+                    BorderRadius="15"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.5,0.5,0.4,0.06"
+                    AbsoluteLayout.LayoutFlags="All"
+                  />
+
 
             <Button Text="F I N A L I Z A R "
                     BackgroundColor="#f57b4a"
@@ -37,6 +48,7 @@
                     TextColor="White"
                     AbsoluteLayout.LayoutBounds="0.5,0.95,0.8,0.06"
                     AbsoluteLayout.LayoutFlags="All"
+                    Clicked="Finalizar"
                    />
 
 

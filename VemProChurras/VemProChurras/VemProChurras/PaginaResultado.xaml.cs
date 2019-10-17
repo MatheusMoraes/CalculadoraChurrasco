@@ -41,7 +41,7 @@ namespace VemProChurras
 
         private async void PaginaRateio(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new PaginaRateio());
+            await Navigation.PushAsync(new PaginaRateio(variaveisCal));
 
         }
 
