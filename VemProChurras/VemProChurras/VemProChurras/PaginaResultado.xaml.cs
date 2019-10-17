@@ -29,6 +29,7 @@ namespace VemProChurras
             variaveisCal.TotCarneMulher = variaveisCal.NumMulher * 0.35 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
             variaveisCal.TotCarneCrianca = variaveisCal.NumCrianca * 0.15 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
             variaveisCal.Total = variaveisCal.TotCarneCrianca + variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher;
+
             
         }
 
