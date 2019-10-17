@@ -4,7 +4,6 @@
              x:Class="VemProChurras.Menu" Title="Menu">
     <MasterDetailPage.Master >
 
-
         <ContentPage Title="Menu" Padding="0">
 
             <ContentPage.Content>
@@ -40,32 +39,31 @@
 
                     <TableView Intent="Menu">
                         <TableSection>
-                            <ViewCell Tapped="Tapped_Inicio">
+                            <ViewCell >
                                 <StackLayout Padding="15,10">
                                     <Label Text="Inicio" VerticalTextAlignment="Center"/>
-                                    
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell Tapped="Tapped_Cortes" >
-                                <StackLayout Padding="15,10" >
+                            <ViewCell >
+                                <StackLayout Padding="15,10">
                                     <Label Text="Cortes" VerticalTextAlignment="Center"/>
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell>
+                            <ViewCell >
                                 <StackLayout Padding="15,10">
                                     <Label Text="Vamos Calcular" VerticalTextAlignment="Center"/>
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell Tapped="Tapped_People" >
+                            <ViewCell >
                                 <StackLayout Padding="15,10">
                                     <Label Text="Pessoas" VerticalTextAlignment="Center"/>
                                 </StackLayout>
                             </ViewCell>
 
-                            <ViewCell Tapped="Tapped_PaginaDeCarnes" >
+                            <ViewCell >
                                 <StackLayout Padding="15,10">
                                     <Label Text="♥ Tipos de Carne" VerticalTextAlignment="Center"/>
                                 </StackLayout>

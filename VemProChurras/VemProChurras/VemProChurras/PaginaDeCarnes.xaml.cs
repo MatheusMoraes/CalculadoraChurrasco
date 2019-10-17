@@ -9,45 +9,42 @@ using Xamarin.Forms.Xaml;
 
 namespace VemProChurras
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PaginaDeCarnes : ContentPage
-	{
-       
-
-		public PaginaDeCarnes ()
-		{
-			InitializeComponent ();
-            
-		}
-
-        private async void Switch_teste(object sender, ToggledEventArgs eventArgs)
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class PaginaDeCarnes : ContentPage
+    {
+        public PaginaDeCarnes()
         {
-            if (SwitchBovina.IsToggled == true)
+            InitializeComponent();
+
+        }
+
+        public int ValorCarneBovina1 { get; private set; }
+        public int ValorCarneAves1 { get; private set; }
+        public int ValorCarneSuino1 { get; private set; }
+
+        private async void PaginaBebidas(object sender, EventArgs e)
+        {
+            if (SwitchBovina.IsToggled == true) ValorCarneBovina1 = 30;
+            else ValorCarneBovina1 = 0;
+
+            if (SwitchAves.IsToggled == true) ValorCarneAves1 = 25;
+            else ValorCarneAves1 = 0;
+
+            if (SwitchSuino.IsToggled == true) ValorCarneSuino1 = 27;
+            else ValorCarneSuino1 = 0;
+
+            Variaveis variaveis = new Variaveis
             {
-                var variaveis = new Variaveis
-                {
-                    CarneBovina = 30
-                };
-
-               
-
-                
-               
-                var paginaResultado = new PaginaResultado();
-                paginaResultado.BindingContext = variaveis;
-                await Navigation.PushAsync(new PaginaResultado());
-
-
-            }
-
+                NumHomem = Convert.ToInt32(lblHomem.Text),
+                NumMulher = Convert.ToInt32(lblMulher.Text),
+                NumCrianca = Convert.ToInt32(lblCrianca.Text),
+                ValorCarneAves = ValorCarneAves1,
+                ValorCarneBovina = ValorCarneBovina1,
+                ValorCarneSuina = ValorCarneSuino1
+            };
+            var paginaBebidas = new PaginaBebidas();
+            paginaBebidas.BindingContext = variaveis;
+            await Navigation.PushAsync(paginaBebidas);
         }
-
-        private async void PaginaBebida(object sender, EventArgs e)
-        {
-           
-            await Navigation.PushAsync(new PaginaResultado());
-        }
-
-
-	}
+    }
 }
