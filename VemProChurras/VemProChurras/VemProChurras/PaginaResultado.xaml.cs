@@ -12,14 +12,16 @@ namespace VemProChurras
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaginaResultado : ContentPage
 	{
-        public Variaveis variaveisresultado;
-
         public PaginaResultado (Variaveis variaveis)
 		{
 			InitializeComponent ();
+            variaveis.TotCarneHomem = variaveis.NumHomem * 0.5 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves*0.3) + (variaveis.ValorCarneSuina*0.2));
+            variaveis.TotCarneMulher = variaveis.NumMulher * 0.35 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves * 0.3) + (variaveis.ValorCarneSuina * 0.2));
+            variaveis.TotCarneCrianca = variaveis.NumCrianca * 0.15 * ((variaveis.ValorCarneBovina * 0.5) + (variaveis.ValorCarneAves * 0.3) + (variaveis.ValorCarneSuina * 0.2));
+            variaveis.Total = variaveis.TotCarneCrianca + variaveis.TotCarneHomem + variaveis.TotCarneMulher;
         }
 
-        
+       
 
         private async void Inicio(object sender, EventArgs e)
         {
