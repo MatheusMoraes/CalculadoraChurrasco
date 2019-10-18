@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="VemProChurras.PaginaResultado"
-             BackgroundImage="fundoResultados.png">
+             x:Class="VemProChurras.PaginaResultado">
+    <!--BackgroundImage="fundoResultados.png"-->
     <ContentPage.Content>
         <AbsoluteLayout>
             <BoxView Color="#f57b4a"
@@ -30,23 +30,23 @@
                      Opacity="0.8"/>
 
             <Label Text="Participantes:"
-                   AbsoluteLayout.LayoutBounds="0.2,0.13"
+                   AbsoluteLayout.LayoutBounds="0.2,0.12"
                    Style="{StaticResource resultados}"/>
 
             <Label Text="{Binding TotalDePessoas}"
-                   AbsoluteLayout.LayoutBounds="0.8,0.13"
+                   AbsoluteLayout.LayoutBounds="0.8,0.12"
                    Style="{StaticResource resultados}"/>
 
-            <Label Text="Valor das Carnes:"
-                   AbsoluteLayout.LayoutBounds="0.2,0.18"
+            <Label Text="Carne Bovina:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.145"
                    Style="{StaticResource resultados}"/>
 
             <Label Text="{Binding TotalDeCarnes}"
-                   AbsoluteLayout.LayoutBounds="0.8,0.18"
+                   AbsoluteLayout.LayoutBounds="0.8,0.145"
                    Style="{StaticResource resultados}"/>
 
-            <Label Text="Valor das Carnes:"
-                   AbsoluteLayout.LayoutBounds="0.2,0.18"
+            <Label Text="Carne Suina:"
+                   AbsoluteLayout.LayoutBounds="0.19,0.16"
                    Style="{StaticResource resultados}"/>
 
             <Label Text="{Binding TotalDeCarnes}"
