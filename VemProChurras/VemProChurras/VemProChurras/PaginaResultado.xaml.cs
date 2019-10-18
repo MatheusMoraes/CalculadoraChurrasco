@@ -37,21 +37,33 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.TotalBebidas = (Math.Round((variaveisCal.ValorCerveja * variaveisCal.TotalDeAdultos) + (variaveisCal.ValorCaipirinha * variaveisCal.TotalDeAdultos) + (variaveisCal.ValorBeats * variaveisCal.TotalDeAdultos) + (variaveisCal.ValorSuco * variaveisCal.TotalDePessoas) + (variaveisCal.ValorVodka * variaveisCal.TotalDeAdultos) + (variaveisCal.ValorRefrigerante * variaveisCal.TotalDePessoas),2));
+            variaveisCal.ValorTotCerveja = (variaveisCal.ValorCerveja * variaveisCal.TotalDeAdultos);
+            variaveisCal.ValorTotCaipirinha = (variaveisCal.ValorCaipirinha * variaveisCal.TotalDeAdultos);
+            variaveisCal.ValorTotBeats = (variaveisCal.ValorBeats * variaveisCal.TotalDeAdultos);
+            variaveisCal.ValorTotSuco = (variaveisCal.ValorSuco * variaveisCal.TotalDePessoas);
+            variaveisCal.ValorTotVodka = (variaveisCal.ValorVodka * variaveisCal.TotalDeAdultos);
+            variaveisCal.ValorTotRefrigerante = (variaveisCal.ValorRefrigerante * variaveisCal.TotalDePessoas);
 
-            variaveisCal.TotalAcompanhamentos = (Math.Round((variaveisCal.ValorArrozAGrega) + (variaveisCal.ValorQueijoCoalho * variaveisCal.TotalDePessoas) + (variaveisCal.ValorFarofa) + (variaveisCal.ValorVinagrete) + (variaveisCal.ValorSaladaMaio) + (variaveisCal.ValorPao * variaveisCal.TotalDePessoas),2));
+            if (variaveisCal.ValorTotCerveja != 0) variaveisCal.QtdCerveja = (variaveisCal.TotalDeAdultos * 2);
+            if (variaveisCal.ValorTotCaipirinha != 0) variaveisCal.QtdCaipirinha = (variaveisCal.TotalDeAdultos * 0.5);
+            if (variaveisCal.ValorTotBeats != 0) variaveisCal.QtdBeats = (variaveisCal.TotalDeAdultos * 2);
+            if (variaveisCal.ValorTotSuco != 0) variaveisCal.QtdSuco = (variaveisCal.TotalDePessoas * 0.5);
+            if (variaveisCal.ValorTotVodka != 0) variaveisCal.QtdVodka = (variaveisCal.TotalDeAdultos * 0.25);
+            if (variaveisCal.ValorTotRefrigerante != 0) variaveisCal.QtdRefrigerante = (variaveisCal.TotalDePessoas * 0.5);
 
-            variaveisCal.TotalDescartaveis = (Math.Round((variaveisCal.ValorCopos + variaveisCal.ValorPratos + variaveisCal.ValorTalheres + variaveisCal.ValorCanudos + variaveisCal.ValorGuardanapos),2));
+            variaveisCal.TotalBebidas = (Math.Round(variaveisCal.ValorTotCerveja + variaveisCal.ValorTotCaipirinha + variaveisCal.ValorTotBeats + variaveisCal.ValorTotSuco + variaveisCal.ValorTotVodka + variaveisCal.ValorTotRefrigerante, 2));
 
-            variaveisCal.TotVlCarneBovina = (variaveisCal.TotalDeCarnes * 0.5) ;
-            variaveisCal.TotVlCarneAve = (variaveisCal.TotalDeCarnes * 0.3) ;
-            variaveisCal.TotVlCarneSuina = (variaveisCal.TotalDeCarnes * 0.2);
+            variaveisCal.TotalAcompanhamentos = (Math.Round((variaveisCal.ValorArrozAGrega) + (variaveisCal.ValorQueijoCoalho * variaveisCal.TotalDePessoas) + (variaveisCal.ValorFarofa) + (variaveisCal.ValorVinagrete) + (variaveisCal.ValorSaladaMaio) + (variaveisCal.ValorPao * variaveisCal.TotalDePessoas), 2));
 
-            variaveisCal.TotKgCarneBovina = variaveisCal.TotVlCarneBovina / 30;
-            variaveisCal.TotKgCarneAve = variaveisCal.TotVlCarneAve / 25 ;
-            variaveisCal.TotKgCarneSuina = variaveisCal.TotVlCarneSuina / 27;
+            variaveisCal.TotalDescartaveis = (Math.Round((variaveisCal.ValorCopos + variaveisCal.ValorPratos + variaveisCal.ValorTalheres + variaveisCal.ValorCanudos + variaveisCal.ValorGuardanapos), 2));
 
+            variaveisCal.ValorTotCarneBovina = (variaveisCal.TotalDeCarnes * 0.5) ;
+            variaveisCal.ValorTotCarneAves = (variaveisCal.TotalDeCarnes * 0.3) ;
+            variaveisCal.ValorTotCarneSuina = (variaveisCal.TotalDeCarnes * 0.2);
 
+            variaveisCal.TotKgCarneBovina = variaveisCal.ValorTotCarneBovina / 30;
+            variaveisCal.TotKgCarneAve = variaveisCal.ValorTotCarneAves / 25 ;
+            variaveisCal.TotKgCarneSuina = variaveisCal.ValorTotCarneSuina / 27;
 
             // //bebidas
             //variaveisCal.ValorCerveja = ;

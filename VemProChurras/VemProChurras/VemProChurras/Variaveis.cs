@@ -39,11 +39,31 @@ namespace VemProChurras
         public double TotKgCarneBovina { get; set; }
         public double TotKgCarneSuina { get; set; }
         public double TotKgCarneAve { get; set; }
+        public double QtdCerveja { get; set; }
+        public double QtdCaipirinha { get; set; }
+        public double QtdBeats { get; set; }
+        public double QtdSuco { get; set; }
+        public double QtdVodka { get; set; }
+        public double QtdRefrigerante { get; set; }
 
         //Valores total
-        public double TotVlCarneBovina { get; set; }
-        public double TotVlCarneSuina { get; set; }
-        public double TotVlCarneAve { get; set; }
+        public double ValorTotCarneBovina { get; set; }
+        public double ValorTotCarneSuina { get; set; }
+        public double ValorTotCarneAves { get; set; }
+        public double ValorTotCerveja {get; set; }
+        public double ValorTotCaipirinha{ get; set; }
+        public double ValorTotBeats {get; set; }
+        public double ValorTotSuco { get; set; }
+        public double ValorTotVodka { get; set; }
+        public double ValorTotRefrigerante { get; set; }
+      
+
+        public double ValorTotArrozAGrega { get; set; }
+        public double ValorTotQueijoCoalho { get; set; }
+        public double ValorTotFarofa { get; set; }
+        public double ValorTotVinagrete { get; set; }
+        public double ValorTotSaladaMaio { get; set; }
+        public double ValorTotPao { get; set; }
 
 
         //Calculos
