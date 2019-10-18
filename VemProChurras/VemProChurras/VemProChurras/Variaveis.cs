@@ -35,6 +35,16 @@ namespace VemProChurras
         public double ValorCanudos { get; set; }
         public double ValorGuardanapos { get; set; }
 
+        //Quantidade
+        public double TotKgCarneBovina { get; set; }
+        public double TotKgCarneSuina { get; set; }
+        public double TotKgCarneAve { get; set; }
+
+        //Valores total
+        public double TotVlCarneBovina { get; set; }
+        public double TotVlCarneSuina { get; set; }
+        public double TotVlCarneAve { get; set; }
+
 
         //Calculos
         public double TotCarneHomem { get; set; }
@@ -42,6 +52,14 @@ namespace VemProChurras
         public double TotCarneCrianca { get; set; }
         public double TotalDeAdultos { get; set; }
         public double TotalDePessoas { get; set; }
+        public double TotalDeCarnes { get; set; }
+        public double TotalBebidas { get; set; }
+        public double TotalAcompanhamentos { get; set; }
+        public double TotalDescartaveis { get; set; }
+        public double TotalQtdDeCarnes { get; set; }
+        public double TotalQtdBebidas { get; set; }
+        public double TotalQtdAcompanhamentos { get; set; }
+        public double TotalQtdDescartaveis { get; set; }
         public double Total { get; set; }
 
     }

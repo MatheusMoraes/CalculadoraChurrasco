@@ -18,7 +18,6 @@
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    HorizontalTextAlignment="Center"/>
 
-
             <BoxView Color="White"
                      AbsoluteLayout.LayoutBounds="0.5,0.3,0.9,0.55"
                      AbsoluteLayout.LayoutFlags="All"
@@ -29,8 +28,6 @@
                 AbsoluteLayout.LayoutBounds="0.5,0.4"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
                    />
-
-           
 
 
             <Button Text="C A L C U L A R "

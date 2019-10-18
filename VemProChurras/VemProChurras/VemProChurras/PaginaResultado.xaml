@@ -19,29 +19,80 @@
 
 
             <BoxView Color="White"
-                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
+                     AbsoluteLayout.LayoutBounds="0.5,0.13,0.8,0.275"
                      AbsoluteLayout.LayoutFlags="All"
                      Opacity="0.8"/>
             
-            <Label Text="Participantes"
-                   AbsoluteLayout.LayoutBounds="0.2,0.4"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                   TextColor="#f57b4a"/>
+            
+            <BoxView Color="White"
+                     AbsoluteLayout.LayoutBounds="0.5,0.55,0.8,0.275"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.8"/>
+
+            <Label Text="Participantes:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.13"
+                   Style="{StaticResource resultados}"/>
 
             <Label Text="{Binding TotalDePessoas}"
-                   AbsoluteLayout.LayoutBounds="0.4,0.4"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                   TextColor="#f57b4a"/>
-            
+                   AbsoluteLayout.LayoutBounds="0.8,0.13"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="Valor das Carnes:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.18"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalDeCarnes}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.18"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="Valor das Carnes:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.18"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalDeCarnes}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.18"
+                   Style="{StaticResource resultados}"/>
+
+
+            <Label Text="Valor das Carnes:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.18"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalDeCarnes}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.18"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="Valor das Bebidas:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.2"
+                    Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalBebidas}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.2"
+                    Style="{StaticResource resultados}"/>
+
+            <Label Text="Valor dos Acompanhamentos:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.25"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalAcompanhamentos}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.25"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="Valor dos Descartaveis:"
+                   AbsoluteLayout.LayoutBounds="0.2,0.3"
+                   Style="{StaticResource resultados}"/>
+
+            <Label Text="{Binding TotalDescartaveis}"
+                   AbsoluteLayout.LayoutBounds="0.8,0.3"
+                   Style="{StaticResource resultados}"/>
+
             <Label Text="Valor Total"
-                   AbsoluteLayout.LayoutBounds="0.2,0.45"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                   TextColor="#f57b4a"/>
+                   AbsoluteLayout.LayoutBounds="0.2,0.35"
+                   Style="{StaticResource resultados}"/>
 
             <Label Text="{Binding Total} "
-                   AbsoluteLayout.LayoutBounds="0.4,0.45"
-                   AbsoluteLayout.LayoutFlags="PositionProportional"
-                   TextColor="#f57b4a"/>
+                   AbsoluteLayout.LayoutBounds="0.8,0.35"
+                  Style="{StaticResource resultados}"/>
 
 
             <Button Text="F I N A L I Z A R "
