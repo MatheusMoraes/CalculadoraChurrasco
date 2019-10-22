@@ -37,13 +37,15 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.ValorTotCarneBovina = (variaveisCal.TotalDeCarnes * 0.5);
-            variaveisCal.ValorTotCarneAves = (variaveisCal.TotalDeCarnes * 0.3);
-            variaveisCal.ValorTotCarneSuina = (variaveisCal.TotalDeCarnes * 0.2);
+            variaveisCal.TotKgCarne = (Math.Round((variaveisCal.TotKgCarneBovina + variaveisCal.TotKgCarneAve+ variaveisCal.TotKgCarneSuina), 2));
 
-            variaveisCal.TotKgCarneBovina = variaveisCal.ValorTotCarneBovina / 30;
-            variaveisCal.TotKgCarneAve = variaveisCal.ValorTotCarneAves / 25;
-            variaveisCal.TotKgCarneSuina = variaveisCal.ValorTotCarneSuina / 27;
+            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDeCarnes * 0.5),2));
+            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
+            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
+
+            variaveisCal.TotKgCarneBovina = (Math.Round(variaveisCal.ValorTotCarneBovina / 30, 2));
+            variaveisCal.TotKgCarneAve = (Math.Round(variaveisCal.ValorTotCarneAves / 25, 2));
+            variaveisCal.TotKgCarneSuina = (Math.Round(variaveisCal.ValorTotCarneSuina / 27, 2));
 
             variaveisCal.ValorTotCerveja = (variaveisCal.ValorCerveja * variaveisCal.TotalDeAdultos);
             variaveisCal.ValorTotCaipirinha = (variaveisCal.ValorCaipirinha * variaveisCal.TotalDeAdultos);
@@ -71,29 +73,7 @@ namespace VemProChurras
 
             variaveisCal.TotalDescartaveis = (Math.Round((variaveisCal.ValorCopos + variaveisCal.ValorPratos + variaveisCal.ValorTalheres + variaveisCal.ValorCanudos + variaveisCal.ValorGuardanapos), 2));
 
-            
-
-            // //bebidas
-            //variaveisCal.ValorCerveja = ;
-            //variaveisCal.ValorCaipirinha = ;
-            //variaveisCal.ValorBeats = ;
-            //variaveisCal.ValorSuco = ;
-            //variaveisCal.ValorVodka = ;
-            //variaveisCal.ValorRefrigerante = ;
-            // //acompanhamentos
-            //variaveisCal.ValorArrozAGrega = ;
-            //variaveisCal.ValorQueijoCoalho = ;
-            //variaveisCal.ValorFarofa = ;
-            //variaveisCal.ValorVinagrete = ;
-            //variaveisCal.ValorSaladaMaio = ;
-            //variaveisCal.ValorPao = ;
-            // //descartaveis
-            //variaveisCal.ValorCopos = ;
-            //variaveisCal.ValorPratos = ;
-            //variaveisCal.ValorTalheres = ;
-            //variaveisCal.ValorCanudos = ;
-            //variaveisCal.ValorGuardanapos = ;
-
+           
             variaveisCal.Total = (Math.Round((variaveisCal.TotalDeCarnes + variaveisCal.TotalBebidas + variaveisCal.TotalAcompanhamentos + variaveisCal.TotalDescartaveis),2));
         }
 

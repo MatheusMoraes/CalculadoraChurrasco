@@ -39,6 +39,7 @@ namespace VemProChurras
         public double TotKgCarneBovina { get; set; }
         public double TotKgCarneSuina { get; set; }
         public double TotKgCarneAve { get; set; }
+        public double TotKgCarne { get; set; }
         public double QtdCerveja { get; set; }
         public double QtdCaipirinha { get; set; }
         public double QtdBeats { get; set; }
