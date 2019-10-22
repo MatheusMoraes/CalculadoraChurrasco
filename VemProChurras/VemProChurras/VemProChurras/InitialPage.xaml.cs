@@ -27,5 +27,6 @@ namespace VemProChurras
         {
             await Navigation.PushAsync(new People());
         }
+     
     }
 }

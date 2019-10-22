@@ -32,7 +32,7 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.45,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="SwitchSuino" IsToggled="False"
+            <Switch x:Name="SwitchSuino" IsToggled="True"
                         AbsoluteLayout.LayoutBounds="0.9,0.45" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />
@@ -45,7 +45,7 @@
                      AbsoluteLayout.LayoutBounds="0.45,0.6,0.9,0.05" 
                      AbsoluteLayout.LayoutFlags="All"/>
 
-            <Switch x:Name="SwitchAves" IsToggled="False"
+            <Switch x:Name="SwitchAves" IsToggled="True"
                         AbsoluteLayout.LayoutBounds="0.9,0.6" 
                         AbsoluteLayout.LayoutFlags="PositionProportional"
                         OnColor="White" />

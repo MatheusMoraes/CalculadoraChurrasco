@@ -12,12 +12,24 @@ namespace VemProChurras
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class PaginaRateio : ContentPage
 	{
-		public PaginaRateio ()
+        public Variaveis variaveisCal;
+
+        public PaginaRateio (Variaveis variaveis)
 		{
 			InitializeComponent ();
-		}
+            variaveisCal = variaveis;
+
+           
+
+
+        }
 
         
+
+        private async  void Finalizar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new InitialPage());
+        }  
 
     }
 }
