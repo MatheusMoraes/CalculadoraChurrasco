@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VemProChurras.PaginaRateio"
+             BackgroundImage="a.jpg">
+    <ContentPage.Content>
+
+        <AbsoluteLayout>
+        <BoxView Color="#f57b4a"
+                     AbsoluteLayout.LayoutBounds="0.5,0.02,0.8,0.06"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.85"/>
+
+        <Label TextColor="White"
+                   FontSize="18"
+                   Text="R A T E I O"
+                   AbsoluteLayout.LayoutBounds="0.5,0.028"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   HorizontalTextAlignment="Center"/>
+            
+            
+            <BoxView Color="White"
+                     AbsoluteLayout.LayoutBounds="0.5,0.3,0.8,0.55"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.8"/>
+
+            <Entry x:Name="EntryRateio"
+                Placeholder="Informe o número de pessoas pagantes: "
+                AbsoluteLayout.LayoutBounds="0.5,0.4"
+                AbsoluteLayout.LayoutFlags="PositionProportional"
+                   />
+
+
+            <Button Text="F I N A L I Z A R "
+                    BackgroundColor="#f57b4a"
+                    BorderRadius="15"
+                    TextColor="White"
+                    AbsoluteLayout.LayoutBounds="0.5,0.95,0.8,0.06"
+                    AbsoluteLayout.LayoutFlags="All"
+                   />
+
+
+        </AbsoluteLayout>
+
+    </ContentPage.Content>
+</ContentPage>
