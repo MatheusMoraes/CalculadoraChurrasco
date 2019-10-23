@@ -48,9 +48,6 @@ namespace VemProChurras
                 lbl_Rateio.Text =Convert.ToString($"{ Math.Round((Rateio),2)}");
                 lbl_Titulo.Text = "Preço Unitário (R$): ";
               
-
-
-
             }
 
             else

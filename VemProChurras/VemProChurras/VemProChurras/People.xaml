@@ -120,13 +120,6 @@
                     MaximumTrackColor="Black"
             />
 
-            <!--<Entry x:Name="Eteste"
-                    AbsoluteLayout.LayoutBounds="0.65,0.5"
-                    AbsoluteLayout.LayoutFlags="PositionProportional"
-                   Placeholder="asjkdhaskjdsahdkjashksj"
-                   PlaceholderColor="Green"
-                   />-->
-
             <Label Text="50"
                    AbsoluteLayout.LayoutBounds="0.89,0.705"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
@@ -140,7 +133,20 @@
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                 />
              
-            <Label Text="oooooooooooooooooooooooo"
+            <Label Text="Um homem adulto come em média 500 gramas de carne."
+                   TextColor="Black"
+                   FontSize="Small"
+                   AbsoluteLayout.LayoutBounds="0.6,0,9"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   />
+            <Label Text="Uma mulher adulta come em média 350 gramas de carne."
+                   TextColor="Black"
+                   FontSize="Small"
+                   AbsoluteLayout.LayoutBounds="0.6,0,95"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   />
+            
+            <Label Text="Uma criança come em média 150 gramas de carne."
                    TextColor="Black"
                    FontSize="Small"
                    AbsoluteLayout.LayoutBounds="0.6,1"
