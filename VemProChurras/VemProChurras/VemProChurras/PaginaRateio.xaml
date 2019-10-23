@@ -27,6 +27,8 @@
                 Placeholder="Informe o número de pessoas pagantes: "
                 AbsoluteLayout.LayoutBounds="0.5,0.4"
                 AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="#f57b4a"
+                   PlaceholderColor="#f57b4a"
                    />
 
 
@@ -36,7 +38,33 @@
                     TextColor="White"
                     AbsoluteLayout.LayoutBounds="0.5,0.5,0.4,0.06"
                     AbsoluteLayout.LayoutFlags="All"
+                    Clicked="CalcularRateio"
                   />
+
+
+
+            <BoxView x:Name="bxv_Rateio"
+                     Color="White"
+                     AbsoluteLayout.LayoutBounds="0.5,0.82,0.8,0.05"
+                     AbsoluteLayout.LayoutFlags="All"
+                     Opacity="0.85"
+                     IsVisible="False"/>
+
+            <Label x:Name="lbl_Titulo"
+                    AbsoluteLayout.LayoutBounds="0.25,0.81"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="#f57b4a"
+                   FontAttributes="Bold"/>
+
+
+            <Label x:Name="lbl_Rateio" 
+              
+                   AbsoluteLayout.LayoutBounds="0.8,0.81"
+                   AbsoluteLayout.LayoutFlags="PositionProportional"
+                   TextColor="#f57b4a"
+                   FontAttributes="Bold" />
+
+
 
 
             <Button Text="F I N A L I Z A R "
