@@ -39,9 +39,9 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneBovina ),2));
-            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneAves), 2));
-            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneSuina), 2));
+            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDePessoas * 0.5),2));
+            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
+            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
 
             variaveisCal.TotKgCarneBovina = (Math.Round(variaveisCal.ValorTotCarneBovina / 30, 2));
             variaveisCal.TotKgCarneAve = (Math.Round(variaveisCal.ValorTotCarneAves / 25, 2));
@@ -69,7 +69,7 @@ namespace VemProChurras
             variaveisCal.ValorTotPao = variaveisCal.ValorPao * variaveisCal.TotalDePessoas;
 
             if (variaveisCal.ValorTotQueijoCoalho != 0) variaveisCal.QtdQueijoCoalho = (variaveisCal.TotalDePessoas * 2);
-            if (variaveisCal.ValorTotPao != 0) variaveisCal.ValorTotPao = (variaveisCal.TotalDePessoas * 1);
+            if (variaveisCal.ValorTotPao != 0) variaveisCal.QtdPao = (variaveisCal.TotalDePessoas * 1);
 
             variaveisCal.TotalAcompanhamentos = (Math.Round((variaveisCal.ValorArrozAGrega) + (variaveisCal.ValorTotQueijoCoalho) + (variaveisCal.ValorFarofa) + (variaveisCal.ValorVinagrete) + (variaveisCal.ValorSaladaMaio) + (variaveisCal.ValorTotPao), 2));
 
