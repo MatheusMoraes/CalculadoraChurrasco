@@ -39,7 +39,7 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDePessoas * 0.5),2));
+            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDeCarnes * 0.5),2));
             variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
             variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
 
