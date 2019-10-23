@@ -15,6 +15,8 @@ namespace VemProChurras
 
         public Variaveis variaveisCal;
 
+      
+
         public PaginaResultado (Variaveis variaveis)
 		{
 			InitializeComponent ();
@@ -77,13 +79,12 @@ namespace VemProChurras
             variaveisCal.Total = (Math.Round((variaveisCal.TotalDeCarnes + variaveisCal.TotalBebidas + variaveisCal.TotalAcompanhamentos + variaveisCal.TotalDescartaveis),2));
         }
 
-        private async void Inicio(object sender, EventArgs e)
-        {
-            await Navigation.PopToRootAsync();
-        }
+      
 
         private async void PaginaRateio(object sender, EventArgs e)
         {
+
+
             await Navigation.PushAsync(new PaginaRateio(variaveisCal));
 
         }

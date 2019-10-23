@@ -26,6 +26,7 @@
                 <Setter Property="FontSize" Value="11"/>
                 <Setter Property="AbsoluteLayout.LayoutFlags" Value="PositionProportional"/>
                 <Setter Property="TextColor" Value="#f57b4a"/>
+                <Setter Property="HorizontalTextAlignment" Value="Start"/>
             </Style>
 
 
