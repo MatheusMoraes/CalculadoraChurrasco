@@ -29,7 +29,7 @@ namespace VemProChurras
             if (SwitchArroz.IsToggled == true) ValorArrozAGrega1 = 30;
             else ValorArrozAGrega1 = 0;
 
-            if (SwitchQueijo.IsToggled == true) ValorQueijoCoalho1 = 5;
+            if (SwitchQueijo.IsToggled == true) ValorQueijoCoalho1 = 2;
             else ValorQueijoCoalho1 = 0;
 
             if (SwitchFarofa.IsToggled == true) ValorFarofa1 = 30;

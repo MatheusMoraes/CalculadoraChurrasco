@@ -39,9 +39,9 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDeCarnes * 0.5),2));
-            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
-            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
+            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneBovina ),2));
+            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneAves), 2));
+            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDePessoas * variaveisCal.ValorCarneSuina), 2));
 
             variaveisCal.TotKgCarneBovina = (Math.Round(variaveisCal.ValorTotCarneBovina / 30, 2));
             variaveisCal.TotKgCarneAve = (Math.Round(variaveisCal.ValorTotCarneAves / 25, 2));
@@ -56,7 +56,7 @@ namespace VemProChurras
             variaveisCal.ValorTotVodka = (variaveisCal.ValorVodka * variaveisCal.TotalDeAdultos);
             variaveisCal.ValorTotRefrigerante = (variaveisCal.ValorRefrigerante * variaveisCal.TotalDePessoas);
 
-            if (variaveisCal.ValorTotCerveja != 0) variaveisCal.QtdCerveja = (variaveisCal.TotalDeAdultos * 2);
+            if (variaveisCal.ValorTotCerveja != 0) variaveisCal.QtdCerveja = (variaveisCal.TotalDeAdultos * 3);
             if (variaveisCal.ValorTotCaipirinha != 0) variaveisCal.QtdCaipirinha = (variaveisCal.TotalDeAdultos * 0.5);
             if (variaveisCal.ValorTotBeats != 0) variaveisCal.QtdBeats = (variaveisCal.TotalDeAdultos * 2);
             if (variaveisCal.ValorTotSuco != 0) variaveisCal.QtdSuco = (variaveisCal.TotalDePessoas * 0.5);
