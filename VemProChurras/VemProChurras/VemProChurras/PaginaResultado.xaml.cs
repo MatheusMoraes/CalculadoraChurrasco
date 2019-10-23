@@ -37,8 +37,6 @@ namespace VemProChurras
 
             variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
 
-            variaveisCal.TotKgCarne = (Math.Round((variaveisCal.TotKgCarneBovina + variaveisCal.TotKgCarneAve+ variaveisCal.TotKgCarneSuina), 2));
-
             variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDeCarnes * 0.5),2));
             variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
             variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
@@ -46,6 +44,8 @@ namespace VemProChurras
             variaveisCal.TotKgCarneBovina = (Math.Round(variaveisCal.ValorTotCarneBovina / 30, 2));
             variaveisCal.TotKgCarneAve = (Math.Round(variaveisCal.ValorTotCarneAves / 25, 2));
             variaveisCal.TotKgCarneSuina = (Math.Round(variaveisCal.ValorTotCarneSuina / 27, 2));
+
+            variaveisCal.TotKgCarne = (Math.Round((variaveisCal.TotKgCarneBovina + variaveisCal.TotKgCarneAve + variaveisCal.TotKgCarneSuina), 2));
 
             variaveisCal.ValorTotCerveja = (variaveisCal.ValorCerveja * variaveisCal.TotalDeAdultos);
             variaveisCal.ValorTotCaipirinha = (variaveisCal.ValorCaipirinha * variaveisCal.TotalDeAdultos);
