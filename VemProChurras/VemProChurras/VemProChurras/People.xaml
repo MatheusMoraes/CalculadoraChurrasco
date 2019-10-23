@@ -136,13 +136,13 @@
             <Label Text="Um homem adulto come em média 500 gramas de carne."
                    TextColor="Black"
                    FontSize="Small"
-                   AbsoluteLayout.LayoutBounds="0.6,0,9"
+                   AbsoluteLayout.LayoutBounds="0.6,0.9"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    />
             <Label Text="Uma mulher adulta come em média 350 gramas de carne."
                    TextColor="Black"
                    FontSize="Small"
-                   AbsoluteLayout.LayoutBounds="0.6,0,95"
+                   AbsoluteLayout.LayoutBounds="0.6,0.95"
                    AbsoluteLayout.LayoutFlags="PositionProportional"
                    />
             
