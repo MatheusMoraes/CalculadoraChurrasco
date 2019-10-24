@@ -83,6 +83,8 @@ namespace VemProChurras
         public double TotalQtdDescartaveis { get; set; }
         public double Total { get; set; }
 
+
+
     }
 
 }

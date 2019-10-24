@@ -27,6 +27,7 @@ namespace VemProChurras
 
         public void Calculo()
         {
+            
             variaveisCal.TotCarneHomem = variaveisCal.NumHomem * 0.5 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
 
             variaveisCal.TotCarneMulher = variaveisCal.NumMulher * 0.35 * ((variaveisCal.ValorCarneBovina * 0.5) + (variaveisCal.ValorCarneAves * 0.3) + (variaveisCal.ValorCarneSuina * 0.2));
@@ -37,15 +38,16 @@ namespace VemProChurras
 
             variaveisCal.TotalDePessoas = variaveisCal.TotalDeAdultos + variaveisCal.NumCrianca;
 
-            variaveisCal.TotalDeCarnes =(Math.Round((variaveisCal.TotCarneHomem + variaveisCal.TotCarneMulher + variaveisCal.TotCarneCrianca),2));
+            if (variaveisCal.ValorCarneBovina != 0) variaveisCal.TotKgCarneBovina = (Math.Round((0.5*(variaveisCal.NumHomem*.5+variaveisCal.NumMulher*0.35+variaveisCal.NumCrianca*0.15)), 2));
+            if (variaveisCal.ValorCarneAves != 0) variaveisCal.TotKgCarneAve = (Math.Round((0.3 * (variaveisCal.NumHomem * .5 + variaveisCal.NumMulher * 0.35 + variaveisCal.NumCrianca * 0.15)), 2));
+            if (variaveisCal.ValorCarneSuina != 0) variaveisCal.TotKgCarneSuina = (Math.Round((0.2 * (variaveisCal.NumHomem * .5 + variaveisCal.NumMulher * 0.35 + variaveisCal.NumCrianca * 0.15)), 2));
 
-            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.TotalDeCarnes * 0.5),2));
-            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.TotalDeCarnes * 0.3),2));
-            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotalDeCarnes * 0.2),2));
 
-            variaveisCal.TotKgCarneBovina = (Math.Round(variaveisCal.ValorTotCarneBovina / 30, 2));
-            variaveisCal.TotKgCarneAve = (Math.Round(variaveisCal.ValorTotCarneAves / 25, 2));
-            variaveisCal.TotKgCarneSuina = (Math.Round(variaveisCal.ValorTotCarneSuina / 27, 2));
+            variaveisCal.ValorTotCarneBovina = (Math.Round((variaveisCal.ValorCarneBovina * variaveisCal.TotKgCarneBovina),2));
+            variaveisCal.ValorTotCarneAves = (Math.Round((variaveisCal.ValorCarneAves * variaveisCal.TotKgCarneAve),2));
+            variaveisCal.ValorTotCarneSuina = (Math.Round((variaveisCal.TotKgCarneSuina * variaveisCal.ValorCarneSuina ),2));
+
+            variaveisCal.TotalDeCarnes = (Math.Round((variaveisCal.ValorTotCarneBovina + variaveisCal.ValorTotCarneAves + variaveisCal.ValorTotCarneSuina), 2));
 
             variaveisCal.TotKgCarne = (Math.Round((variaveisCal.TotKgCarneBovina + variaveisCal.TotKgCarneAve + variaveisCal.TotKgCarneSuina), 2));
 
