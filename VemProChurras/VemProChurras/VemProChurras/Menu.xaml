@@ -71,7 +71,7 @@
 
                             <ViewCell Tapped="Descartaveis">
                                 <StackLayout Padding="15,10">
-                                    <Label Text="Bebidas" VerticalTextAlignment="Center"/>
+                                    <Label Text="Descartáveis" VerticalTextAlignment="Center"/>
                                 </StackLayout>
                             </ViewCell>
                            
